@@ -1,3 +1,60 @@
+<?php
+$mkSent = false;
+$mkError = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $allowedServices = ['Digital Advertising', 'Web Solutions', 'Software Development', 'Digital Consultancy', 'Real Estate Services', 'Digital Currency Operations', 'Information Services'];
+
+  $name    = trim($_POST['name'] ?? '');
+  $email   = trim($_POST['email'] ?? '');
+  $phone   = trim($_POST['phone'] ?? '');
+  $service = trim($_POST['service'] ?? '');
+  $message = trim($_POST['message'] ?? '');
+
+  if (!in_array($service, $allowedServices, true)) {
+    $service = '';
+  }
+
+  if ($name === '' || mb_strlen($name) > 120) {
+    $mkError = 'Please enter your full name.';
+  } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $mkError = 'Please enter a valid email address.';
+  } elseif ($phone !== '' && !preg_match('/^[0-9+\-\s()]{6,20}$/', $phone)) {
+    $mkError = 'Please enter a valid phone number.';
+  } elseif ($message === '' || mb_strlen($message) > 5000) {
+    $mkError = 'Please enter a message (up to 5000 characters).';
+  } else {
+    require __DIR__ . '/lib/PHPMailer/Exception.php';
+    require __DIR__ . '/lib/PHPMailer/PHPMailer.php';
+    require __DIR__ . '/lib/PHPMailer/SMTP.php';
+
+    $cfg = require __DIR__ . '/mail-config.php';
+    $mailer = new PHPMailer\PHPMailer\PHPMailer(true);
+    try {
+      $mailer->isSMTP();
+      $mailer->Host       = $cfg['host'];
+      $mailer->Port       = $cfg['port'];
+      $mailer->SMTPAuth   = true;
+      $mailer->Username   = $cfg['username'];
+      $mailer->Password   = $cfg['password'];
+      $mailer->SMTPSecure = $cfg['encryption'] === 'ssl'
+        ? PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS
+        : PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
+
+      $mailer->setFrom($cfg['from_email'], $cfg['from_name']);
+      $mailer->addAddress($cfg['to_email']);
+      $mailer->addReplyTo($email, $name);
+
+      $mailer->Subject = 'New website enquiry from ' . $name;
+      $mailer->Body    = "Name: $name\nEmail: $email\nPhone: $phone\nService: $service\n\nMessage:\n$message\n";
+
+      $mailer->send();
+      $mkSent = true;
+    } catch (Exception $e) {
+      $mkError = 'Sorry, something went wrong sending your message. Please email us directly.';
+    }
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,15 +167,22 @@
         <a href="https://www.makutano.co.tz" style="font:500 15px 'Space Grotesk',sans-serif;text-align:right">www.makutano.co.tz</a>
       </div>
     </div>
-    <div style="margin-top:30px;height:210px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:rgba(0,0,0,.16);display:flex;align-items:flex-end;padding:20px;font:400 11px/1.6 'JetBrains Mono',monospace;color:rgba(255,255,255,.45)">map embed · Makole, Dodoma</div>
+    <div style="margin-top:30px;height:210px;border-radius:12px;border:1px solid rgba(255,255,255,.16);overflow:hidden">
+      <iframe src="https://www.google.com/maps?q=Makole,+Dodoma,+Tanzania&amp;output=embed" width="100%" height="100%" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Makutano Digital — Makole, Dodoma, Tanzania"></iframe>
+    </div>
   </div>
-  <form onsubmit="return false" style="background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:32px 30px">
+  <form method="post" style="background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:32px 30px">
     <div style="font:600 20px/1.3 'Space Grotesk',sans-serif;margin-bottom:22px"><span class="lang-en">Send us a message</span><span class="lang-sw">Tutumie ujumbe</span></div>
+    <?php if ($mkSent): ?>
+    <div style="margin-bottom:16px;padding:13px 15px;border-radius:8px;background:rgba(255,189,89,.15);border:1px solid rgba(255,189,89,.4);font:500 13px/1.5 Manrope,sans-serif"><span class="lang-en">Thanks — your message has been sent. We'll get back to you shortly.</span><span class="lang-sw">Asante — ujumbe wako umetumwa. Tutawasiliana nawe hivi karibuni.</span></div>
+    <?php elseif ($mkError): ?>
+    <div style="margin-bottom:16px;padding:13px 15px;border-radius:8px;background:rgba(220,80,80,.15);border:1px solid rgba(220,80,80,.4);font:500 13px/1.5 Manrope,sans-serif"><?php echo htmlspecialchars($mkError); ?></div>
+    <?php endif; ?>
     <div style="display:flex;flex-direction:column;gap:14px">
-      <input class="mk-field" type="text" placeholder="Full name / Jina kamili">
-      <input class="mk-field" type="email" placeholder="Email / Barua pepe">
-      <input class="mk-field" type="tel" placeholder="Phone / Simu">
-      <select class="mk-field">
+      <input class="mk-field" type="text" name="name" placeholder="Full name / Jina kamili" maxlength="120" required>
+      <input class="mk-field" type="email" name="email" placeholder="Email / Barua pepe" maxlength="254" required>
+      <input class="mk-field" type="tel" name="phone" placeholder="Phone / Simu" pattern="[0-9+\-\s()]{6,20}" maxlength="20">
+      <select class="mk-field" name="service">
         <option style="color:#1e3a5f">Digital Advertising</option>
         <option style="color:#1e3a5f">Web Solutions</option>
         <option style="color:#1e3a5f">Software Development</option>
@@ -127,7 +191,7 @@
         <option style="color:#1e3a5f">Digital Currency Operations</option>
         <option style="color:#1e3a5f">Information Services</option>
       </select>
-      <textarea class="mk-field" rows="4" placeholder="How can we help? / Tunawezaje kusaidia?"></textarea>
+      <textarea class="mk-field" name="message" rows="4" placeholder="How can we help? / Tunawezaje kusaidia?" maxlength="5000" required></textarea>
       <button class="mk-cta" type="submit" style="background:#ffbd59;color:#1e3a5f;border:0;padding:15px 24px;border-radius:999px;font:700 14px 'Space Grotesk',sans-serif;cursor:pointer"><span class="lang-en">Send message</span><span class="lang-sw">Tuma ujumbe</span></button>
     </div>
   </form>
