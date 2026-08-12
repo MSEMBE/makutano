@@ -156,7 +156,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
       <div style="display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.12)">
         <span style="font:500 11px 'JetBrains Mono',monospace;letter-spacing:.1em;color:rgba(255,255,255,.55)"><span class="lang-en">PHONE</span><span class="lang-sw">SIMU</span></span>
-        <a href="tel:+255745997711" style="font:500 15px 'Space Grotesk',sans-serif;text-align:right">0745 99 77 11</a>
+        <a href="tel:+255745997711" style="font:500 15px 'Space Grotesk',sans-serif;text-align:right">+255 745 99 77 11</a>
       </div>
       <div style="display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.12)">
         <span style="font:500 11px 'JetBrains Mono',monospace;letter-spacing:.1em;color:rgba(255,255,255,.55)"><span class="lang-en">EMAIL</span><span class="lang-sw">BARUA PEPE</span></span>
@@ -218,7 +218,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">CONTACT</span><span class="lang-sw">MAWASILIANO</span></div>
       <div style="display:flex;flex-direction:column;gap:10px;font:400 13px/1.5 Manrope,sans-serif;color:rgba(255,255,255,.75)">
         <span>Makole, Dodoma, Tanzania</span>
-        <a href="tel:+255745997711" style="color:rgba(255,255,255,.75)">0745 99 77 11</a>
+        <a href="tel:+255745997711" style="color:rgba(255,255,255,.75)">+255 745 99 77 11</a>
         <a href="mailto:info@makutano.co.tz" style="color:rgba(255,255,255,.75)">info@makutano.co.tz</a>
         <a href="https://www.makutano.co.tz" style="color:rgba(255,255,255,.75)">www.makutano.co.tz</a>
       </div>
