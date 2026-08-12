@@ -17,6 +17,9 @@
     html[lang="sw"] .lang-sw{display:inline}
     @keyframes mkMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
     @keyframes mkFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    @keyframes mkBreathe{0%,100%{filter:brightness(.82) saturate(1);transform:scale(1)}50%{filter:brightness(1.3) saturate(1.2);transform:scale(1.015)}}
+    .mk-gradtext{background:conic-gradient(from 200deg,#fff,#ffbd59,#fff,#ffbd59,#fff);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;animation:mkBreathe 3.2s ease-in-out infinite}
+    html[data-theme="light"] .mk-gradtext{background:conic-gradient(from 200deg,#1e3a5f,#ffbd59,#1e3a5f,#ffbd59,#1e3a5f);-webkit-background-clip:text;background-clip:text}
     .mk-link{animation:mkFloat 7s ease-in-out infinite}
     .mk-cta{transition:transform .18s ease,box-shadow .18s ease}
     .mk-cta:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
@@ -84,7 +87,7 @@
 </div>
 <div class="mk-pad" style="position:relative;padding:74px 46px 56px;max-width:900px">
   <div style="font:500 10.5px 'JetBrains Mono',monospace;letter-spacing:.2em;color:#ffbd59;margin-bottom:24px">SEVEN CORE SERVICE DOMAINS</div>
-  <h1 style="margin:0 0 22px;font:700 60px/1.02 'Space Grotesk',sans-serif;letter-spacing:-.03em;text-wrap:balance"><span class="lang-en">Expertise &amp; core competencies</span><span class="lang-sw">Utaalam na uwezo wetu wa msingi</span></h1>
+  <h1 style="margin:0 0 22px;font:700 60px/1.02 'Space Grotesk',sans-serif;letter-spacing:-.03em;text-wrap:balance"><span class="lang-en"><span class="mk-gradtext">Expertise &amp; core competencies</span></span><span class="lang-sw"><span class="mk-gradtext">Utaalam na uwezo wetu wa msingi</span></span></h1>
   <p style="margin:0;max-width:620px;font:400 17px/1.62 Manrope,sans-serif;color:rgba(255,255,255,.75);text-wrap:pretty"><span class="lang-en">Makutano Digital's activities span seven core service domains, each aligned to industry-standard practice.</span><span class="lang-sw">Shughuli za Makutano Digital zinajumuisha nyanja saba za huduma, kila moja ikiendana na viwango vya kitaaluma.</span></p>
 </div>
 <div style="position:relative;border-top:1px solid rgba(255,255,255,.14)">
