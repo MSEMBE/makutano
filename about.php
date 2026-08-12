@@ -189,7 +189,7 @@
   </div>
   <div class="mk-pad" style="padding:18px 46px;border-top:1px solid rgba(255,255,255,.1);font:400 11px 'JetBrains Mono',monospace;color:rgba(255,255,255,.4);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
     <span>© 2026 MAKUTANO DIGITAL COMPANY LIMITED</span>
-    <span>TIN 205-614-818 · BL01695972026-2700002767</span>
+    <span>Developed by <a href="https://moinfo.co.tz" target="_blank" rel="noopener">Moinfotech</a></span>
   </div>
 </div>
 </div>
