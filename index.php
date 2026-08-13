@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Makutano Digital — ICT &amp; Digital Solutions, Dodoma</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -97,7 +99,7 @@
   </p>
   <div style="display:flex;gap:14px;align-items:center">
     <a class="mk-cta" href="contact.php" style="background:#ffbd59;color:#1e3a5f;padding:16px 30px;border-radius:999px;font:700 14.5px 'Space Grotesk',sans-serif"><span class="lang-en">Start a project</span><span class="lang-sw">Anza mradi</span></a>
-    <a href="about.php" style="padding:16px 28px;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;font:500 14.5px 'Space Grotesk',sans-serif;color:#fff"><span class="lang-en">View company profile</span><span class="lang-sw">Wasifu wa kampuni</span></a>
+    <a href="assets/Makutano_Digital_Company_Profile.pdf" target="_blank" rel="noopener" style="padding:16px 28px;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;font:500 14.5px 'Space Grotesk',sans-serif;color:#fff"><span class="lang-en">View company profile</span><span class="lang-sw">Wasifu wa kampuni</span></a>
   </div>
 </div>
 
@@ -140,7 +142,7 @@
       <p style="margin:0;max-width:340px;font:400 13px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.6)"><span class="lang-en">Makutano Digital Company Limited — a duly licensed ICT services provider operating under the laws of the United Republic of Tanzania.</span><span class="lang-sw">Makutano Digital Company Limited — mtoa huduma za TEHAMA aliyesajiliwa kwa mujibu wa sheria za Jamhuri ya Muungano wa Tanzania.</span></p>
     </div>
     <div>
-      <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">PAGES</span><span class="lang-sw">KURASA</span></div>
+      <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">USEFUL LINKS</span><span class="lang-sw">VIUNGO MUHIMU</span></div>
       <div style="display:flex;flex-direction:column;gap:10px;font:500 13px Manrope,sans-serif">
         <a href="index.php" style="color:rgba(255,255,255,.75)"><span class="lang-en">Home</span><span class="lang-sw">Nyumbani</span></a>
         <a href="services.php" style="color:rgba(255,255,255,.75)"><span class="lang-en">Services</span><span class="lang-sw">Huduma</span></a>
@@ -152,7 +154,7 @@
       <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">CONTACT</span><span class="lang-sw">MAWASILIANO</span></div>
       <div style="display:flex;flex-direction:column;gap:10px;font:400 13px/1.5 Manrope,sans-serif;color:rgba(255,255,255,.75)">
         <span>Makole, Dodoma, Tanzania</span>
-        <a href="tel:+255745997711" style="color:rgba(255,255,255,.75)">0745 99 77 11</a>
+        <a href="tel:+255745997711" style="color:rgba(255,255,255,.75)">+255 745 997 711</a>
         <a href="mailto:info@makutano.co.tz" style="color:rgba(255,255,255,.75)">info@makutano.co.tz</a>
         <a href="https://www.makutano.co.tz" style="color:rgba(255,255,255,.75)">www.makutano.co.tz</a>
       </div>

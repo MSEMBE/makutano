@@ -15,7 +15,7 @@
   </p>
   <div style="display:flex;gap:14px;align-items:center">
     <a class="mk-cta" href="{{ route('contact') }}" style="background:#ffbd59;color:#1e3a5f;padding:16px 30px;border-radius:999px;font:700 14.5px 'Space Grotesk',sans-serif"><span class="lang-en">Start a project</span><span class="lang-sw">Anza mradi</span></a>
-    <a href="{{ route('about') }}" style="padding:16px 28px;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;font:500 14.5px 'Space Grotesk',sans-serif;color:#fff"><span class="lang-en">View company profile</span><span class="lang-sw">Wasifu wa kampuni</span></a>
+    <a href="{{ asset('assets/Makutano_Digital_Company_Profile.pdf') }}" target="_blank" rel="noopener" style="padding:16px 28px;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;font:500 14.5px 'Space Grotesk',sans-serif;color:#fff"><span class="lang-en">View company profile</span><span class="lang-sw">Wasifu wa kampuni</span></a>
   </div>
 </div>
 

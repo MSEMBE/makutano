@@ -8,7 +8,7 @@
       <p style="margin:0;max-width:340px;font:400 13px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.6)"><span class="lang-en">Makutano Digital Company Limited — a duly licensed ICT services provider operating under the laws of the United Republic of Tanzania.</span><span class="lang-sw">Makutano Digital Company Limited — mtoa huduma za TEHAMA aliyesajiliwa kwa mujibu wa sheria za Jamhuri ya Muungano wa Tanzania.</span></p>
     </div>
     <div>
-      <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">PAGES</span><span class="lang-sw">KURASA</span></div>
+      <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">USEFUL LINKS</span><span class="lang-sw">VIUNGO MUHIMU</span></div>
       <div style="display:flex;flex-direction:column;gap:10px;font:500 13px Manrope,sans-serif">
         <a href="{{ route('home') }}" style="color:rgba(255,255,255,.75)"><span class="lang-en">Home</span><span class="lang-sw">Nyumbani</span></a>
         <a href="{{ route('services') }}" style="color:rgba(255,255,255,.75)"><span class="lang-en">Services</span><span class="lang-sw">Huduma</span></a>
@@ -16,11 +16,13 @@
         <a href="{{ route('contact') }}" style="color:rgba(255,255,255,.75)"><span class="lang-en">Contact</span><span class="lang-sw">Wasiliana</span></a>
       </div>
     </div>
+    
     <div>
+      <!-- Programmed by Eng. Joseph Msembe, jmsembe@gmail.com, +255 713 612 679 -->
       <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">CONTACT</span><span class="lang-sw">MAWASILIANO</span></div>
       <div style="display:flex;flex-direction:column;gap:10px;font:400 13px/1.5 Manrope,sans-serif;color:rgba(255,255,255,.75)">
         <span>Makole, Dodoma, Tanzania</span>
-        <a href="tel:+255745997711" style="color:rgba(255,255,255,.75)">0745 99 77 11</a>
+        <a href="tel:+255745997711" style="color:rgba(255,255,255,.75)">+255 745 997 711</a>
         <a href="mailto:info@makutano.co.tz" style="color:rgba(255,255,255,.75)">info@makutano.co.tz</a>
         <a href="https://www.makutano.co.tz" style="color:rgba(255,255,255,.75)">www.makutano.co.tz</a>
       </div>

@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Makutano Digital</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -90,6 +92,57 @@
   <h1 style="margin:0 0 22px;font:700 60px/1.02 'Space Grotesk',sans-serif;letter-spacing:-.03em;text-wrap:balance"><span class="lang-en"><span class="mk-gradtext">A Tanzanian digital solutions partnership</span></span><span class="lang-sw"><span class="mk-gradtext">Ushirikiano wa suluhisho za kidijitali wa Tanzania</span></span></h1>
   <p style="margin:0;max-width:620px;font:400 17px/1.62 Manrope,sans-serif;color:rgba(255,255,255,.75);text-wrap:pretty"><span class="lang-en">Established to bridge the gap between opportunity and execution in the country’s fast-growing digital economy.</span><span class="lang-sw">Umeanzishwa kuunganisha fursa na utekelezaji katika uchumi wa kidijitali unaokua kwa kasi wa nchi.</span></p>
 </div>
+<div class="mk-pad" style="position:relative;padding:64px 46px 64px;border-top:1px solid rgba(255,255,255,.14);text-align:center">
+  <h2 style="margin:0 0 14px;font:700 40px/1.15 'Space Grotesk',sans-serif;letter-spacing:-.02em"><span class="lang-en"><span style="color:#fff">Our </span><span style="color:#ffbd59">Core Values</span></span><span class="lang-sw"><span style="color:#fff">Maadili </span><span style="color:#ffbd59">Yetu Makuu</span></span></h2>
+  <p style="margin:0 auto 40px;max-width:680px;font:400 16px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.68)"><span class="lang-en">Our core values guide every partnership and drive exceptional results.</span><span class="lang-sw">Maadili yetu makuu yanaongoza kila ushirikiano na kuleta matokeo bora.</span></p>
+  <div class="mk-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c2.8 1.6 4.6 4.9 4.6 8.6 0 2.4-.8 4.6-2.1 6.3l-2.5 2.6-2.5-2.6C8.2 15.7 7.4 13.5 7.4 11.1c0-3.7 1.8-7 4.6-8.6Z"></path><circle cx="12" cy="10" r="1.8"></circle><path d="M8.5 15.5 5.5 18l1-3.4"></path><path d="M15.5 15.5 18.5 18l-1-3.4"></path><path d="M9.5 19.5 10 22h4l.5-2.5"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Innovation First</span><span class="lang-sw">Ubunifu Kwanza</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We harness cutting-edge web and mobile technologies to create practical, future-ready solutions.</span><span class="lang-sw">Tunatumia teknolojia za kisasa za wavuti na simu kuunda suluhisho la vitendo na la baadaye.</span></p>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Collaboration</span><span class="lang-sw">Ushirikiano</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We believe in co-creating with our clients, ensuring that every solution reflects both sides of the need.</span><span class="lang-sw">Tunaamini katika kubuni pamoja na wateja wetu, kuhakikisha kila suluhisho linaakisi mahitaji ya pande zote mbili.</span></p>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor"></circle></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Impact Driven</span><span class="lang-sw">Matokeo Yenye Athari</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">Every product we build aims to improve lives, empower organizations, and strengthen connections.</span><span class="lang-sw">Kila bidhaa tunayounda inalenga kuboresha maisha, kuwezesha mashirika, na kuimarisha mahusiano.</span></p>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Integrity &amp; Transparency</span><span class="lang-sw">Uadilifu na Uwazi</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We value honesty, clear communication, and accountability in every project.</span><span class="lang-sw">Tunathamini uaminifu, mawasiliano wazi, na uwajibikaji katika kila mradi.</span></p>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9Z"></path><path d="M11 3 8 9l4 12 4-12-3-6"></path><path d="M2 9h20"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Excellence in Delivery</span><span class="lang-sw">Ubora katika Utoaji</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">Quality is at the heart of our work; we ensure reliable, scalable, and user-friendly solutions.</span><span class="lang-sw">Ubora ndio msingi wa kazi yetu; tunahakikisha suluhisho za kuaminika, zinazoweza kukua, na rafiki kwa mtumiaji.</span></p>
+    </div>
+  </div>
+</div>
 <div class="mk-pad mk-grid" style="position:relative;display:grid;grid-template-columns:1.25fr .95fr;gap:56px;padding:20px 46px 64px;border-top:1px solid rgba(255,255,255,.14);padding-top:56px">
   <div>
     <p style="margin:0 0 22px;font:400 16px/1.72 Manrope,sans-serif;color:rgba(255,255,255,.8);text-wrap:pretty">Operating at the intersection of technology, real estate, and information services, we exist to give businesses, investors, and institutions a single, trusted partner for building and scaling their digital presence.</p>
@@ -136,6 +189,57 @@
     </div>
   </div>
 </div>
+<div class="mk-pad" style="position:relative;padding:64px 46px 64px;border-top:1px solid rgba(255,255,255,.14);text-align:center">
+  <h2 style="margin:0 0 14px;font:700 40px/1.15 'Space Grotesk',sans-serif;letter-spacing:-.02em"><span class="lang-en"><span style="color:#fff">Proven </span><span style="color:#ffbd59">Credibility</span></span><span class="lang-sw"><span style="color:#fff">Uaminifu </span><span style="color:#ffbd59">Uliothibitika</span></span></h2>
+  <p style="margin:0 auto 40px;max-width:620px;font:400 16px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.68)"><span class="lang-en">Why you can trust us to deliver exceptional results that exceed expectations.</span><span class="lang-sw">Kwa nini unaweza kutuamini kutoa matokeo bora yanayozidi matarajio.</span></p>
+  <div class="mk-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left">
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Proven Expertise</span><span class="lang-sw">Utaalamu Uliothibitika</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">Our team has strong experience in developing web and mobile applications across diverse industries.</span><span class="lang-sw">Timu yetu ina uzoefu mkubwa katika kutengeneza programu za wavuti na simu katika sekta mbalimbali.</span></p>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Client-Centered Approach</span><span class="lang-sw">Mkabala Unaomlenga Mteja</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We put our clients first, listening and tailoring solutions that bridge gaps effectively.</span><span class="lang-sw">Tunawaweka wateja wetu mbele, tukisikiliza na kurekebisha suluhisho zinazoziba mapengo kwa ufanisi.</span></p>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Trusted Partnerships</span><span class="lang-sw">Ushirikiano wa Kuaminika</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">Organizations and individuals rely on us to deliver solutions that truly unite and create value.</span><span class="lang-sw">Mashirika na watu binafsi wanategemea sisi kutoa suluhisho zinazounganisha kweli na kuongeza thamani.</span></p>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 7 13.5 15.5 8.5 10.5 2 17"></path><path d="M16 7h6v6"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Continuous Growth</span><span class="lang-sw">Ukuaji Endelevu</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We stay ahead of digital trends, ensuring our solutions remain relevant and impactful.</span><span class="lang-sw">Tunabaki mbele ya mienendo ya kidijitali, kuhakikisha suluhisho zetu zinabaki muhimu na zenye athari.</span></p>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </div>
+        <div style="font:600 18px/1.3 'Space Grotesk',sans-serif"><span class="lang-en">Commitment to Security &amp; Reliability</span><span class="lang-sw">Dhamira ya Usalama na Kutegemewa</span></div>
+      </div>
+      <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We prioritize secure, stable, and dependable technologies for long-term trust.</span><span class="lang-sw">Tunapa kipaumbele teknolojia salama, thabiti, na za kutegemewa kwa uaminifu wa muda mrefu.</span></p>
+    </div>
+  </div>
+</div>
 <div class="mk-pad" style="position:relative;padding:56px 46px 64px;border-top:1px solid rgba(255,255,255,.14)">
   <div style="font:500 10.5px 'JetBrains Mono',monospace;letter-spacing:.2em;color:#ffbd59;margin-bottom:26px"><span class="lang-en">LEADERSHIP</span><span class="lang-sw">UONGOZI</span></div>
   <p style="margin:0 0 30px;max-width:620px;font:400 16px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.75)">Makutano Digital is led by a two-member executive team holding overall responsibility for strategy, operations, and client delivery.</p>
@@ -169,7 +273,7 @@
       <p style="margin:0;max-width:340px;font:400 13px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.6)"><span class="lang-en">Makutano Digital Company Limited — a duly licensed ICT services provider operating under the laws of the United Republic of Tanzania.</span><span class="lang-sw">Makutano Digital Company Limited — mtoa huduma za TEHAMA aliyesajiliwa kwa mujibu wa sheria za Jamhuri ya Muungano wa Tanzania.</span></p>
     </div>
     <div>
-      <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">PAGES</span><span class="lang-sw">KURASA</span></div>
+      <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">USEFUL LINKS</span><span class="lang-sw">VIUNGO MUHIMU</span></div>
       <div style="display:flex;flex-direction:column;gap:10px;font:500 13px Manrope,sans-serif">
         <a href="index.php" style="color:rgba(255,255,255,.75)"><span class="lang-en">Home</span><span class="lang-sw">Nyumbani</span></a>
         <a href="services.php" style="color:rgba(255,255,255,.75)"><span class="lang-en">Services</span><span class="lang-sw">Huduma</span></a>
@@ -181,7 +285,7 @@
       <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:16px"><span class="lang-en">CONTACT</span><span class="lang-sw">MAWASILIANO</span></div>
       <div style="display:flex;flex-direction:column;gap:10px;font:400 13px/1.5 Manrope,sans-serif;color:rgba(255,255,255,.75)">
         <span>Makole, Dodoma, Tanzania</span>
-        <a href="tel:+255745997711" style="color:rgba(255,255,255,.75)">0745 99 77 11</a>
+        <a href="tel:+255745997711" style="color:rgba(255,255,255,.75)">+255 745 997 711</a>
         <a href="mailto:info@makutano.co.tz" style="color:rgba(255,255,255,.75)">info@makutano.co.tz</a>
         <a href="https://www.makutano.co.tz" style="color:rgba(255,255,255,.75)">www.makutano.co.tz</a>
       </div>
