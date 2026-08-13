@@ -87,10 +87,10 @@
   <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">01</span>
     <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Digital Advertising</span><span class="lang-sw">Matangazo ya Kidijitali</span></div>
+      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Software Development</span><span class="lang-sw">Utengenezaji wa Programu</span></div>
       <div style="display:inline-block;margin-top:9px;font:500 9.5px 'JetBrains Mono',monospace;letter-spacing:.14em;color:#1e3a5f;background:#ffbd59;padding:4px 8px;border-radius:4px">PRIMARY</div>
     </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Our primary business activity — comprehensive digital advertising services designed to build brand visibility and drive measurable client growth.</span><span class="lang-sw">Shughuli yetu kuu ya biashara — huduma kamili za matangazo ya kidijitali zilizoundwa kujenga mwonekano wa chapa na kuchochea ukuaji unaopimika wa mteja.</span></p>
+    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Custom software solutions, including Software as a Service (SaaS) products tailored to client operational needs.</span><span class="lang-sw">Suluhisho maalum za programu, ikiwemo bidhaa za Software as a Service (SaaS) zilizoundwa kwa mahitaji ya uendeshaji wa mteja.</span></p>
     <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
   <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
@@ -105,10 +105,10 @@
   <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">03</span>
     <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Software Development</span><span class="lang-sw">Utengenezaji wa Programu</span></div>
-      
+      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Digital Advertising</span><span class="lang-sw">Matangazo ya Kidijitali</span></div>
+
     </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Custom software solutions, including Software as a Service (SaaS) products tailored to client operational needs.</span><span class="lang-sw">Suluhisho maalum za programu, ikiwemo bidhaa za Software as a Service (SaaS) zilizoundwa kwa mahitaji ya uendeshaji wa mteja.</span></p>
+    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Our primary business activity — comprehensive digital advertising services designed to build brand visibility and drive measurable client growth.</span><span class="lang-sw">Shughuli yetu kuu ya biashara — huduma kamili za matangazo ya kidijitali zilizoundwa kujenga mwonekano wa chapa na kuchochea ukuaji unaopimika wa mteja.</span></p>
     <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
   <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
