@@ -80,10 +80,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     .mk-gradtext{background:conic-gradient(from 200deg,#fff,#ffbd59,#fff,#ffbd59,#fff);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;animation:mkBreathe 3.2s ease-in-out infinite}
     html[data-theme="light"] .mk-gradtext{background:conic-gradient(from 200deg,#1e3a5f,#ffbd59,#1e3a5f,#ffbd59,#1e3a5f);-webkit-background-clip:text;background-clip:text}
     .mk-link{animation:mkFloat 7s ease-in-out infinite}
-    .mk-cta{transition:transform .18s ease,box-shadow .18s ease}
-    .mk-cta:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
-    .mk-langtoggle{cursor:pointer;user-select:none;color:rgba(255,255,255,.82)}
-    .mk-langtoggle:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+    .mk-cta{transition:transform .22s ease,box-shadow .22s ease}
+    .mk-cta:hover,.mk-cta:active{transform:translateY(-4px);box-shadow:0 16px 20px -12px rgba(0,0,0,.4),0 20px 34px -10px rgba(255,189,89,.45)}
+    .mk-langtoggle{cursor:pointer;user-select:none;color:rgba(255,255,255,.82);display:inline-block;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-langtoggle:hover,.mk-langtoggle:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     .mk-navlink{color:rgba(255,255,255,.82);font:500 12.5px 'Space Grotesk',sans-serif;padding-bottom:3px;border-bottom:1.5px solid transparent;transition:color .18s ease,border-color .18s ease}
     .mk-navlink:hover{color:#fff;border-bottom-color:rgba(255,255,255,.4)}
     .mk-navlink[aria-current="page"]{color:#fff;border-bottom-color:#ffbd59}
@@ -93,24 +93,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     .mk-arrow{opacity:0;transform:translateX(-8px);transition:all .25s ease;color:#ffbd59}
     .mk-field{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:13px 15px;color:#fff;font:400 14px Manrope,sans-serif;outline:none;transition:border-color .18s ease}
     .mk-field:focus{border-color:#ffbd59}
+    .mk-vcard{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease,background .3s ease;cursor:default}
+    .mk-vcard:hover,.mk-vcard:active{transform:translateY(-8px);border-color:rgba(255,189,89,.55);box-shadow:0 24px 20px -18px rgba(0,0,0,.45),0 30px 45px -12px rgba(0,0,0,.4)}
+    html[data-theme="light"] .mk-vcard:hover,html[data-theme="light"] .mk-vcard:active{border-color:rgba(255,189,89,.7);box-shadow:0 24px 20px -18px rgba(30,58,95,.16),0 30px 45px -12px rgba(30,58,95,.22)}
     .mk-field::placeholder{color:rgba(255,255,255,.4)}
-    .mk-menubtn{display:none}
-    .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease}
-    .mk-themebtn:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+    .mk-menubtn{display:none;transition:border-color .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-themebtn:hover,.mk-themebtn:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px) scale(1.05);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     html[data-theme="light"] body{background:#f7f5f0;color:#141414}
-    html[data-theme="light"] .mk-themebtn{border-color:rgba(20,20,20,.25);color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-themebtn:hover{color:#141414;border-color:rgba(20,20,20,.5)}
-    html[data-theme="light"] .mk-langtoggle{color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-langtoggle:hover{color:#141414;border-color:rgba(20,20,20,.5)}
-    html[data-theme="light"] .mk-navlink{color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-navlink:hover,html[data-theme="light"] .mk-navlink[aria-current="page"]{color:#141414}
-    html[data-theme="light"] .mk-navlink:hover{border-bottom-color:rgba(20,20,20,.3)}
-    html[data-theme="light"] .mk-nav{background:#eeeae0}
     html[data-theme="light"] .mk-svcrow:hover{background:rgba(20,20,20,.05)}
     html[data-theme="light"] .mk-field{background:rgba(20,20,20,.04);border-color:rgba(20,20,20,.2);color:#141414}
     html[data-theme="light"] .mk-field::placeholder{color:rgba(20,20,20,.4)}
-    html[data-theme="light"] .mk-menubtn{border-color:rgba(20,20,20,.25);color:#141414}
-    html[data-theme="light"] .mk-cta:hover{box-shadow:0 10px 24px rgba(30,58,95,.22)}
+    html[data-theme="light"] .mk-cta:hover,html[data-theme="light"] .mk-cta:active{box-shadow:0 16px 20px -12px rgba(30,58,95,.3),0 20px 34px -10px rgba(255,189,89,.5)}
     html[data-theme="light"] img[alt="Makutano Digital"],html[data-theme="light"] .mk-link{filter:none}
     @media (max-width:900px){
       .mk-hero h1{font-size:46px !important}
@@ -128,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div style="position:absolute;left:0;top:0;width:330px;height:330px;border:34px solid #ffbd59;border-radius:70px"></div>
   <div style="position:absolute;left:180px;top:180px;width:330px;height:330px;border:34px solid #fff;border-radius:70px"></div>
 </div>
-<div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14)" class="mk-pad">
+<div class="mk-fixedbar mk-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14);background:#1e3a5f">
   <a href="index.php" style="display:flex;align-items:center;gap:12px;color:#fff">
     <img src="assets/logo.png" alt="Makutano Digital" style="width:32px;height:32px;border-radius:7px;display:block;background:#fff">
     <span style="font:700 15px/1 'Space Grotesk',sans-serif;letter-spacing:.04em">MAKUTANO</span>
@@ -169,11 +163,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="https://www.makutano.co.tz" style="font:500 15px 'Space Grotesk',sans-serif;text-align:right">www.makutano.co.tz</a>
       </div>
     </div>
-    <div style="margin-top:30px;height:210px;border-radius:12px;border:1px solid rgba(255,255,255,.16);overflow:hidden">
+    <div class="mk-vcard" style="margin-top:30px;height:210px;border-radius:12px;border:1px solid rgba(255,255,255,.16);overflow:hidden">
       <iframe src="https://www.google.com/maps?q=Makole,+Dodoma,+Tanzania&amp;output=embed" width="100%" height="100%" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Makutano Digital — Makole, Dodoma, Tanzania"></iframe>
     </div>
   </div>
-  <form method="post" style="background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:32px 30px">
+  <form method="post" class="mk-vcard" style="background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:32px 30px">
     <div style="font:600 20px/1.3 'Space Grotesk',sans-serif;margin-bottom:22px"><span class="lang-en">Send us a message</span><span class="lang-sw">Tutumie ujumbe</span></div>
     <?php if ($mkSent): ?>
     <div style="margin-bottom:16px;padding:13px 15px;border-radius:8px;background:rgba(255,189,89,.15);border:1px solid rgba(255,189,89,.4);font:500 13px/1.5 Manrope,sans-serif"><span class="lang-en">Thanks — your message has been sent. We'll get back to you shortly.</span><span class="lang-sw">Asante — ujumbe wako umetumwa. Tutawasiliana nawe hivi karibuni.</span></div>
@@ -198,7 +192,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </form>
 </div>
-<div style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
+<div class="mk-fixedbar" style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
   <div class="mk-pad mk-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:52px 46px 40px">
     <div>
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
@@ -263,6 +257,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           if (el.dataset.mkStyle === undefined) el.dataset.mkStyle = el.getAttribute('style');
           el.setAttribute('style', el.dataset.mkStyle);
           if (!light) continue;
+          if (el.closest('.mk-fixedbar')) continue;
           var out = [];
           for (var j = 0; j < el.style.length; j++) {
             var p = el.style[j];

@@ -23,37 +23,28 @@
     .mk-gradtext{background:conic-gradient(from 200deg,#fff,#ffbd59,#fff,#ffbd59,#fff);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;animation:mkBreathe 3.2s ease-in-out infinite}
     html[data-theme="light"] .mk-gradtext{background:conic-gradient(from 200deg,#1e3a5f,#ffbd59,#1e3a5f,#ffbd59,#1e3a5f);-webkit-background-clip:text;background-clip:text}
     .mk-link{animation:mkFloat 7s ease-in-out infinite}
-    .mk-cta{transition:transform .18s ease,box-shadow .18s ease}
-    .mk-cta:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
-    .mk-langtoggle{cursor:pointer;user-select:none;color:rgba(255,255,255,.82)}
-    .mk-langtoggle:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+    .mk-cta{transition:transform .22s ease,box-shadow .22s ease}
+    .mk-cta:hover,.mk-cta:active{transform:translateY(-4px);box-shadow:0 16px 20px -12px rgba(0,0,0,.4),0 20px 34px -10px rgba(255,189,89,.45)}
+    .mk-langtoggle{cursor:pointer;user-select:none;color:rgba(255,255,255,.82);display:inline-block;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-langtoggle:hover,.mk-langtoggle:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     .mk-navlink{color:rgba(255,255,255,.82);font:500 12.5px 'Space Grotesk',sans-serif;padding-bottom:3px;border-bottom:1.5px solid transparent;transition:color .18s ease,border-color .18s ease}
     .mk-navlink:hover{color:#fff;border-bottom-color:rgba(255,255,255,.4)}
     .mk-navlink[aria-current="page"]{color:#fff;border-bottom-color:#ffbd59}
-    .mk-svcrow{transition:background .25s ease,padding-left .25s ease}
-    .mk-svcrow:hover{background:rgba(255,255,255,.06);padding-left:60px}
-    .mk-svcrow:hover .mk-arrow{opacity:1;transform:translateX(0)}
+    .mk-vcard{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease,background .3s ease;cursor:default}
+    .mk-vcard:hover,.mk-vcard:active{transform:translateY(-8px);border-color:rgba(255,189,89,.55);background:rgba(255,255,255,.04);box-shadow:0 24px 20px -18px rgba(0,0,0,.45),0 30px 45px -12px rgba(0,0,0,.4)}
+    html[data-theme="light"] .mk-vcard:hover,html[data-theme="light"] .mk-vcard:active{border-color:rgba(255,189,89,.7);background:rgba(30,58,95,.03);box-shadow:0 24px 20px -18px rgba(30,58,95,.16),0 30px 45px -12px rgba(30,58,95,.22)}
+    .mk-vcard:hover .mk-arrow{opacity:1;transform:translateX(0)}
     .mk-arrow{opacity:0;transform:translateX(-8px);transition:all .25s ease;color:#ffbd59}
     .mk-field{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:13px 15px;color:#fff;font:400 14px Manrope,sans-serif;outline:none;transition:border-color .18s ease}
     .mk-field:focus{border-color:#ffbd59}
     .mk-field::placeholder{color:rgba(255,255,255,.4)}
-    .mk-menubtn{display:none}
-    .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease}
-    .mk-themebtn:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+    .mk-menubtn{display:none;transition:border-color .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-themebtn:hover,.mk-themebtn:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px) scale(1.05);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     html[data-theme="light"] body{background:#f7f5f0;color:#141414}
-    html[data-theme="light"] .mk-themebtn{border-color:rgba(20,20,20,.25);color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-themebtn:hover{color:#141414;border-color:rgba(20,20,20,.5)}
-    html[data-theme="light"] .mk-langtoggle{color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-langtoggle:hover{color:#141414;border-color:rgba(20,20,20,.5)}
-    html[data-theme="light"] .mk-navlink{color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-navlink:hover,html[data-theme="light"] .mk-navlink[aria-current="page"]{color:#141414}
-    html[data-theme="light"] .mk-navlink:hover{border-bottom-color:rgba(20,20,20,.3)}
-    html[data-theme="light"] .mk-nav{background:#eeeae0}
-    html[data-theme="light"] .mk-svcrow:hover{background:rgba(20,20,20,.05)}
     html[data-theme="light"] .mk-field{background:rgba(20,20,20,.04);border-color:rgba(20,20,20,.2);color:#141414}
     html[data-theme="light"] .mk-field::placeholder{color:rgba(20,20,20,.4)}
-    html[data-theme="light"] .mk-menubtn{border-color:rgba(20,20,20,.25);color:#141414}
-    html[data-theme="light"] .mk-cta:hover{box-shadow:0 10px 24px rgba(30,58,95,.22)}
+    html[data-theme="light"] .mk-cta:hover,html[data-theme="light"] .mk-cta:active{box-shadow:0 16px 20px -12px rgba(30,58,95,.3),0 20px 34px -10px rgba(255,189,89,.5)}
     html[data-theme="light"] img[alt="Makutano Digital"],html[data-theme="light"] .mk-link{filter:none}
     @media (max-width:900px){
       .mk-hero h1{font-size:46px !important}
@@ -71,7 +62,7 @@
   <div style="position:absolute;left:0;top:0;width:330px;height:330px;border:34px solid #ffbd59;border-radius:70px"></div>
   <div style="position:absolute;left:180px;top:180px;width:330px;height:330px;border:34px solid #fff;border-radius:70px"></div>
 </div>
-<div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14)" class="mk-pad">
+<div class="mk-fixedbar mk-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14);background:#1e3a5f">
   <a href="index.php" style="display:flex;align-items:center;gap:12px;color:#fff">
     <img src="assets/logo.png" alt="Makutano Digital" style="width:32px;height:32px;border-radius:7px;display:block;background:#fff">
     <span style="font:700 15px/1 'Space Grotesk',sans-serif;letter-spacing:.04em">MAKUTANO</span>
@@ -92,8 +83,8 @@
   <h1 style="margin:0 0 22px;font:700 60px/1.02 'Space Grotesk',sans-serif;letter-spacing:-.03em;text-wrap:balance"><span class="lang-en"><span class="mk-gradtext">Expertise &amp; core competencies</span></span><span class="lang-sw"><span class="mk-gradtext">Utaalam na uwezo wetu wa msingi</span></span></h1>
   <p style="margin:0;max-width:620px;font:400 17px/1.62 Manrope,sans-serif;color:rgba(255,255,255,.75);text-wrap:pretty"><span class="lang-en">Makutano Digital's activities span seven core service domains, each aligned to industry-standard practice.</span><span class="lang-sw">Shughuli za Makutano Digital zinajumuisha nyanja saba za huduma, kila moja ikiendana na viwango vya kitaaluma.</span></p>
 </div>
-<div style="position:relative;border-top:1px solid rgba(255,255,255,.14)">
-  <div class="mk-svcrow mk-pad" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:30px 46px;border-bottom:1px solid rgba(255,255,255,.11)">
+<div class="mk-pad" style="position:relative;padding:26px 46px 46px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:16px">
+  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">01</span>
     <div>
       <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Digital Advertising</span><span class="lang-sw">Matangazo ya Kidijitali</span></div>
@@ -102,7 +93,7 @@
     <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Our primary business activity — comprehensive digital advertising services designed to build brand visibility and drive measurable client growth.</span><span class="lang-sw">Shughuli yetu kuu ya biashara — huduma kamili za matangazo ya kidijitali zilizoundwa kujenga mwonekano wa chapa na kuchochea ukuaji unaopimika wa mteja.</span></p>
     <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
-  <div class="mk-svcrow mk-pad" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:30px 46px;border-bottom:1px solid rgba(255,255,255,.11)">
+  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">02</span>
     <div>
       <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Web Solutions</span><span class="lang-sw">Suluhisho za Tovuti</span></div>
@@ -111,7 +102,7 @@
     <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Development and ongoing maintenance of web portals and related online platforms, built to modern performance and security standards.</span><span class="lang-sw">Utengenezaji na matengenezo endelevu ya mifumo ya tovuti na majukwaa ya mtandaoni, kwa viwango vya kisasa vya utendaji na usalama.</span></p>
     <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
-  <div class="mk-svcrow mk-pad" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:30px 46px;border-bottom:1px solid rgba(255,255,255,.11)">
+  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">03</span>
     <div>
       <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Software Development</span><span class="lang-sw">Utengenezaji wa Programu</span></div>
@@ -120,7 +111,7 @@
     <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Custom software solutions, including Software as a Service (SaaS) products tailored to client operational needs.</span><span class="lang-sw">Suluhisho maalum za programu, ikiwemo bidhaa za Software as a Service (SaaS) zilizoundwa kwa mahitaji ya uendeshaji wa mteja.</span></p>
     <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
-  <div class="mk-svcrow mk-pad" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:30px 46px;border-bottom:1px solid rgba(255,255,255,.11)">
+  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">04</span>
     <div>
       <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Digital Consultancy</span><span class="lang-sw">Ushauri wa Kidijitali</span></div>
@@ -129,7 +120,7 @@
     <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Expert advisory services across digital domains, helping organisations plan and execute their technology strategy.</span><span class="lang-sw">Huduma za ushauri wa kitaalam katika nyanja za kidijitali, kusaidia taasisi kupanga na kutekeleza mikakati ya teknolojia.</span></p>
     <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
-  <div class="mk-svcrow mk-pad" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:30px 46px;border-bottom:1px solid rgba(255,255,255,.11)">
+  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">05</span>
     <div>
       <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Real Estate Services</span><span class="lang-sw">Huduma za Ardhi na Majengo</span></div>
@@ -138,7 +129,7 @@
     <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Fee- and contract-based real estate brokerage, management, and consultancy services.</span><span class="lang-sw">Huduma za udalali, usimamizi na ushauri wa ardhi na majengo kwa ada na mikataba.</span></p>
     <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
-  <div class="mk-svcrow mk-pad" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:30px 46px;border-bottom:1px solid rgba(255,255,255,.11)">
+  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">06</span>
     <div>
       <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Digital Currency Operations</span><span class="lang-sw">Shughuli za Sarafu za Kidijitali</span></div>
@@ -147,7 +138,7 @@
     <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Cryptocurrency-related activities conducted in full compliance with prevailing laws and regulations.</span><span class="lang-sw">Shughuli zinazohusiana na sarafu za kidijitali zinazofanywa kwa kufuata kikamilifu sheria na kanuni zilizopo.</span></p>
     <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
-  <div class="mk-svcrow mk-pad" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:30px 46px;border-bottom:1px solid rgba(255,255,255,.11)">
+  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
     <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">07</span>
     <div>
       <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Information Services</span><span class="lang-sw">Huduma za Taarifa</span></div>
@@ -161,7 +152,7 @@
   <div style="font:600 26px/1.3 'Space Grotesk',sans-serif;max-width:520px"><span class="lang-en">Not sure which service fits? Tell us the outcome you need.</span><span class="lang-sw">Hujui huduma ipi inafaa? Tueleze matokeo unayohitaji.</span></div>
   <a class="mk-cta" href="contact.php" style="background:#ffbd59;color:#1e3a5f;padding:16px 30px;border-radius:999px;font:700 14.5px 'Space Grotesk',sans-serif"><span class="lang-en">Request a proposal</span><span class="lang-sw">Omba pendekezo</span></a>
 </div>
-<div style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
+<div class="mk-fixedbar" style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
   <div class="mk-pad mk-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:52px 46px 40px">
     <div>
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
@@ -226,6 +217,7 @@
           if (el.dataset.mkStyle === undefined) el.dataset.mkStyle = el.getAttribute('style');
           el.setAttribute('style', el.dataset.mkStyle);
           if (!light) continue;
+          if (el.closest('.mk-fixedbar')) continue;
           var out = [];
           for (var j = 0; j < el.style.length; j++) {
             var p = el.style[j];

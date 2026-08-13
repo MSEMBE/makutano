@@ -1,9 +1,10 @@
+<style>.mk-footer-brand{color:#fff}</style>
 <div style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
   <div class="mk-pad mk-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:52px 46px 40px">
     <div>
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
         <img src="{{ asset('assets/logo.png') }}" alt="" style="width:30px;height:30px;border-radius:6px;display:block;background:#fff">
-        <span style="font:700 14px/1 'Space Grotesk',sans-serif;letter-spacing:.04em">MAKUTANO DIGITAL</span>
+        <span class="mk-footer-brand" style="font:700 14px/1 'Space Grotesk',sans-serif;letter-spacing:.04em">MAKUTANO DIGITAL</span>
       </div>
       <p style="margin:0;max-width:340px;font:400 13px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.6)"><span class="lang-en">Makutano Digital Company Limited — a duly licensed ICT services provider operating under the laws of the United Republic of Tanzania.</span><span class="lang-sw">Makutano Digital Company Limited — mtoa huduma za TEHAMA aliyesajiliwa kwa mujibu wa sheria za Jamhuri ya Muungano wa Tanzania.</span></p>
     </div>

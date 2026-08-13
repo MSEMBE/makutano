@@ -23,10 +23,10 @@
     .mk-gradtext{background:conic-gradient(from 200deg,#fff,#ffbd59,#fff,#ffbd59,#fff);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;animation:mkBreathe 3.2s ease-in-out infinite}
     html[data-theme="light"] .mk-gradtext{background:conic-gradient(from 200deg,#1e3a5f,#ffbd59,#1e3a5f,#ffbd59,#1e3a5f);-webkit-background-clip:text;background-clip:text}
     .mk-link{animation:mkFloat 7s ease-in-out infinite}
-    .mk-cta{transition:transform .18s ease,box-shadow .18s ease}
-    .mk-cta:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
-    .mk-langtoggle{cursor:pointer;user-select:none;color:rgba(255,255,255,.82)}
-    .mk-langtoggle:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+    .mk-cta{transition:transform .22s ease,box-shadow .22s ease}
+    .mk-cta:hover,.mk-cta:active{transform:translateY(-4px);box-shadow:0 16px 20px -12px rgba(0,0,0,.4),0 20px 34px -10px rgba(255,189,89,.45)}
+    .mk-langtoggle{cursor:pointer;user-select:none;color:rgba(255,255,255,.82);display:inline-block;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-langtoggle:hover,.mk-langtoggle:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     .mk-navlink{color:rgba(255,255,255,.82);font:500 12.5px 'Space Grotesk',sans-serif;padding-bottom:3px;border-bottom:1.5px solid transparent;transition:color .18s ease,border-color .18s ease}
     .mk-navlink:hover{color:#fff;border-bottom-color:rgba(255,255,255,.4)}
     .mk-navlink[aria-current="page"]{color:#fff;border-bottom-color:#ffbd59}
@@ -34,26 +34,20 @@
     .mk-svcrow:hover{background:rgba(255,255,255,.06);padding-left:60px}
     .mk-svcrow:hover .mk-arrow{opacity:1;transform:translateX(0)}
     .mk-arrow{opacity:0;transform:translateX(-8px);transition:all .25s ease;color:#ffbd59}
+    .mk-vcard{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;cursor:default}
+    .mk-vcard:hover,.mk-vcard:active{transform:translateY(-8px);border-color:rgba(255,189,89,.55);box-shadow:0 24px 20px -18px rgba(0,0,0,.45),0 30px 45px -12px rgba(0,0,0,.4)}
+    html[data-theme="light"] .mk-vcard:hover,html[data-theme="light"] .mk-vcard:active{border-color:rgba(255,189,89,.7);box-shadow:0 24px 20px -18px rgba(30,58,95,.16),0 30px 45px -12px rgba(30,58,95,.22)}
     .mk-field{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:13px 15px;color:#fff;font:400 14px Manrope,sans-serif;outline:none;transition:border-color .18s ease}
     .mk-field:focus{border-color:#ffbd59}
     .mk-field::placeholder{color:rgba(255,255,255,.4)}
-    .mk-menubtn{display:none}
-    .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease}
-    .mk-themebtn:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+    .mk-menubtn{display:none;transition:border-color .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-themebtn:hover,.mk-themebtn:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px) scale(1.05);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     html[data-theme="light"] body{background:#f7f5f0;color:#141414}
-    html[data-theme="light"] .mk-themebtn{border-color:rgba(20,20,20,.25);color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-themebtn:hover{color:#141414;border-color:rgba(20,20,20,.5)}
-    html[data-theme="light"] .mk-langtoggle{color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-langtoggle:hover{color:#141414;border-color:rgba(20,20,20,.5)}
-    html[data-theme="light"] .mk-navlink{color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-navlink:hover,html[data-theme="light"] .mk-navlink[aria-current="page"]{color:#141414}
-    html[data-theme="light"] .mk-navlink:hover{border-bottom-color:rgba(20,20,20,.3)}
-    html[data-theme="light"] .mk-nav{background:#eeeae0}
     html[data-theme="light"] .mk-svcrow:hover{background:rgba(20,20,20,.05)}
     html[data-theme="light"] .mk-field{background:rgba(20,20,20,.04);border-color:rgba(20,20,20,.2);color:#141414}
     html[data-theme="light"] .mk-field::placeholder{color:rgba(20,20,20,.4)}
-    html[data-theme="light"] .mk-menubtn{border-color:rgba(20,20,20,.25);color:#141414}
-    html[data-theme="light"] .mk-cta:hover{box-shadow:0 10px 24px rgba(30,58,95,.22)}
+    html[data-theme="light"] .mk-cta:hover,html[data-theme="light"] .mk-cta:active{box-shadow:0 16px 20px -12px rgba(30,58,95,.3),0 20px 34px -10px rgba(255,189,89,.5)}
     html[data-theme="light"] img[alt="Makutano Digital"],html[data-theme="light"] .mk-link{filter:none}
     @media (max-width:900px){
       .mk-hero h1{font-size:46px !important}
@@ -71,7 +65,7 @@
   <div style="position:absolute;left:0;top:0;width:330px;height:330px;border:34px solid #ffbd59;border-radius:70px"></div>
   <div style="position:absolute;left:180px;top:180px;width:330px;height:330px;border:34px solid #fff;border-radius:70px"></div>
 </div>
-<div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14)" class="mk-pad">
+<div class="mk-fixedbar mk-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14);background:#1e3a5f">
   <a href="index.php" style="display:flex;align-items:center;gap:12px;color:#fff">
     <img src="assets/logo.png" alt="Makutano Digital" style="width:32px;height:32px;border-radius:7px;display:block;background:#fff">
     <span style="font:700 15px/1 'Space Grotesk',sans-serif;letter-spacing:.04em">MAKUTANO</span>
@@ -99,7 +93,7 @@
   </p>
   <div style="display:flex;gap:14px;align-items:center">
     <a class="mk-cta" href="contact.php" style="background:#ffbd59;color:#1e3a5f;padding:16px 30px;border-radius:999px;font:700 14.5px 'Space Grotesk',sans-serif"><span class="lang-en">Start a project</span><span class="lang-sw">Anza mradi</span></a>
-    <a href="assets/Makutano_Digital_Company_Profile.pdf" target="_blank" rel="noopener" style="padding:16px 28px;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;font:500 14.5px 'Space Grotesk',sans-serif;color:#fff"><span class="lang-en">View company profile</span><span class="lang-sw">Wasifu wa kampuni</span></a>
+    <a class="mk-cta" href="assets/Makutano_Digital_Company_Profile.pdf" target="_blank" rel="noopener" style="padding:16px 28px;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;font:500 14.5px 'Space Grotesk',sans-serif;color:#fff"><span class="lang-en">View company profile</span><span class="lang-sw">Wasifu wa kampuni</span></a>
   </div>
 </div>
 
@@ -114,25 +108,47 @@
   </div>
 </div>
 
-<div class="mk-grid" style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.14)" data-more="services.html">
-  <div style="background:#1e3a5f;padding:34px 46px 40px">
-    <div style="font:700 34px/1 'Space Grotesk',sans-serif;color:#ffbd59">01</div>
-    <div style="font:600 18px/1.3 'Space Grotesk',sans-serif;margin:14px 0 8px"><span class="lang-en">Advertising first</span><span class="lang-sw">Matangazo kwanza</span></div>
-    <div style="font:400 13px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.66)"><span class="lang-en">Our primary line of business — campaigns built for visibility and growth.</span><span class="lang-sw">Biashara yetu kuu — kampeni zilizoundwa kwa mwonekano na ukuaji.</span></div>
+<div class="mk-grid mk-pad" style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:32px 46px 40px" data-more="services.html">
+  <div class="mk-vcard" style="background:#1e3a5f;padding:40px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px;text-align:center">
+    <div style="width:64px;height:64px;margin:0 auto 22px;border-radius:16px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>
+    </div>
+    <div style="font:700 20px/1.3 'Space Grotesk',sans-serif;margin-bottom:12px"><span class="lang-en">AI-Powered Solutions</span><span class="lang-sw">Suluhisho za AI</span></div>
+    <p style="margin:0 0 22px;font:400 14px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.66)"><span class="lang-en">We integrate cutting-edge AI and machine learning to create smart, automated, and predictive applications that drive business growth.</span><span class="lang-sw">Tunatumia AI na ujifunzaji wa mashine wa kisasa kuunda programu janja, za kiotomatiki, na za kutabiri zinazochochea ukuaji wa biashara.</span></p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px">
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">Machine Learning</span>
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">Automation</span>
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">Predictive Analytics</span>
+    </div>
   </div>
-  <div style="background:#1e3a5f;padding:34px 46px 40px">
-    <div style="font:700 34px/1 'Space Grotesk',sans-serif;color:#ffbd59">02</div>
-    <div style="font:600 18px/1.3 'Space Grotesk',sans-serif;margin:14px 0 8px"><span class="lang-en">Software Development</span><span class="lang-sw">Utengenezaji wa Programu</span></div>
-    <div style="font:400 13px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.66)"><span class="lang-en">Custom software solutions, including Software as a Service (SaaS) products tailored to client operational needs.</span><span class="lang-sw">Suluhisho maalum za programu, ikiwemo bidhaa za Software as a Service (SaaS) zilizoundwa kwa mahitaji ya uendeshaji wa mteja.</span></div>
+  <div class="mk-vcard" style="background:#1e3a5f;padding:40px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px;text-align:center">
+    <div style="width:64px;height:64px;margin:0 auto 22px;border-radius:16px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+    </div>
+    <div style="font:700 20px/1.3 'Space Grotesk',sans-serif;margin-bottom:12px"><span class="lang-en">Web Development</span><span class="lang-sw">Utengenezaji wa Tovuti</span></div>
+    <p style="margin:0 0 22px;font:400 14px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.66)"><span class="lang-en">From dynamic single-page applications to large-scale enterprise platforms, we build fast, secure, and scalable web solutions.</span><span class="lang-sw">Kutoka programu za ukurasa mmoja zinazobadilika hadi majukwaa makubwa ya kibiashara, tunajenga suluhisho za wavuti za haraka, salama, na zinazoweza kukua.</span></p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px">
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">React</span>
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">Laravel</span>
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">CodeIgniter</span>
+    </div>
   </div>
-  <div style="background:#1e3a5f;padding:34px 46px 40px">
-    <div style="font:700 34px/1 'Space Grotesk',sans-serif;color:#ffbd59">03</div>
-    <div style="font:600 18px/1.3 'Space Grotesk',sans-serif;margin:14px 0 8px"><span class="lang-en">Fully licensed</span><span class="lang-sw">Tumesajiliwa kikamilifu</span></div>
-    <div style="font:400 13px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.66)"><span class="lang-en">Registered ICT provider under the laws of Tanzania, Dodoma City Council.</span><span class="lang-sw">Mtoa huduma wa TEHAMA aliyesajiliwa kwa sheria za Tanzania, Halmashauri ya Jiji la Dodoma.</span></div>
+  <div class="mk-vcard" style="background:#1e3a5f;padding:40px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px;text-align:center">
+    <div style="width:64px;height:64px;margin:0 auto 22px;border-radius:16px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:#ffbd59">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2"></rect><path d="M6 18h6"></path><path d="M9 14v4"></path><rect x="15" y="10" width="7" height="12" rx="1.5"></rect><path d="M18 19h.01"></path></svg>
+    </div>
+    <div style="font:700 20px/1.3 'Space Grotesk',sans-serif;margin-bottom:12px"><span class="lang-en">Mobile App Development</span><span class="lang-sw">Utengenezaji wa Programu za Simu</span></div>
+    <p style="margin:0 0 22px;font:400 14px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.66)"><span class="lang-en">We design and develop beautiful, intuitive, and high-performance native mobile apps for both iOS and Android platforms.</span><span class="lang-sw">Tunabuni na kutengeneza programu za simu nzuri, rahisi kutumia, na zenye utendaji wa hali ya juu kwa mifumo ya iOS na Android.</span></p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px">
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">Flutter</span>
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">React Native</span>
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">iOS</span>
+      <span style="font:700 11px 'JetBrains Mono',monospace;padding:6px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff">Android</span>
+    </div>
   </div>
 </div>
 
-<div style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
+<div class="mk-fixedbar" style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
   <div class="mk-pad mk-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:52px 46px 40px">
     <div>
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
@@ -197,6 +213,7 @@
           if (el.dataset.mkStyle === undefined) el.dataset.mkStyle = el.getAttribute('style');
           el.setAttribute('style', el.dataset.mkStyle);
           if (!light) continue;
+          if (el.closest('.mk-fixedbar')) continue;
           var out = [];
           for (var j = 0; j < el.style.length; j++) {
             var p = el.style[j];

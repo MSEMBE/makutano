@@ -23,10 +23,10 @@
     .mk-gradtext{background:conic-gradient(from 200deg,#fff,#ffbd59,#fff,#ffbd59,#fff);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;animation:mkBreathe 3.2s ease-in-out infinite}
     html[data-theme="light"] .mk-gradtext{background:conic-gradient(from 200deg,#1e3a5f,#ffbd59,#1e3a5f,#ffbd59,#1e3a5f);-webkit-background-clip:text;background-clip:text}
     .mk-link{animation:mkFloat 7s ease-in-out infinite}
-    .mk-cta{transition:transform .18s ease,box-shadow .18s ease}
-    .mk-cta:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
-    .mk-langtoggle{cursor:pointer;user-select:none;color:rgba(255,255,255,.82)}
-    .mk-langtoggle:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+    .mk-cta{transition:transform .22s ease,box-shadow .22s ease}
+    .mk-cta:hover,.mk-cta:active{transform:translateY(-4px);box-shadow:0 16px 20px -12px rgba(0,0,0,.4),0 20px 34px -10px rgba(255,189,89,.45)}
+    .mk-langtoggle{cursor:pointer;user-select:none;color:rgba(255,255,255,.82);display:inline-block;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-langtoggle:hover,.mk-langtoggle:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     .mk-navlink{color:rgba(255,255,255,.82);font:500 12.5px 'Space Grotesk',sans-serif;padding-bottom:3px;border-bottom:1.5px solid transparent;transition:color .18s ease,border-color .18s ease}
     .mk-navlink:hover{color:#fff;border-bottom-color:rgba(255,255,255,.4)}
     .mk-navlink[aria-current="page"]{color:#fff;border-bottom-color:#ffbd59}
@@ -36,24 +36,18 @@
     .mk-arrow{opacity:0;transform:translateX(-8px);transition:all .25s ease;color:#ffbd59}
     .mk-field{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:13px 15px;color:#fff;font:400 14px Manrope,sans-serif;outline:none;transition:border-color .18s ease}
     .mk-field:focus{border-color:#ffbd59}
+    .mk-vcard{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease,background .3s ease;cursor:default}
+    .mk-vcard:hover,.mk-vcard:active{transform:translateY(-8px);border-color:rgba(255,189,89,.55);background:rgba(255,255,255,.04);box-shadow:0 24px 20px -18px rgba(0,0,0,.45),0 30px 45px -12px rgba(0,0,0,.4)}
+    html[data-theme="light"] .mk-vcard:hover,html[data-theme="light"] .mk-vcard:active{border-color:rgba(255,189,89,.7);background:rgba(30,58,95,.03);box-shadow:0 24px 20px -18px rgba(30,58,95,.16),0 30px 45px -12px rgba(30,58,95,.22)}
     .mk-field::placeholder{color:rgba(255,255,255,.4)}
-    .mk-menubtn{display:none}
-    .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease}
-    .mk-themebtn:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+    .mk-menubtn{display:none;transition:border-color .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+    .mk-themebtn:hover,.mk-themebtn:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px) scale(1.05);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     html[data-theme="light"] body{background:#f7f5f0;color:#141414}
-    html[data-theme="light"] .mk-themebtn{border-color:rgba(20,20,20,.25);color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-themebtn:hover{color:#141414;border-color:rgba(20,20,20,.5)}
-    html[data-theme="light"] .mk-langtoggle{color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-langtoggle:hover{color:#141414;border-color:rgba(20,20,20,.5)}
-    html[data-theme="light"] .mk-navlink{color:rgba(20,20,20,.7)}
-    html[data-theme="light"] .mk-navlink:hover,html[data-theme="light"] .mk-navlink[aria-current="page"]{color:#141414}
-    html[data-theme="light"] .mk-navlink:hover{border-bottom-color:rgba(20,20,20,.3)}
-    html[data-theme="light"] .mk-nav{background:#eeeae0}
     html[data-theme="light"] .mk-svcrow:hover{background:rgba(20,20,20,.05)}
     html[data-theme="light"] .mk-field{background:rgba(20,20,20,.04);border-color:rgba(20,20,20,.2);color:#141414}
     html[data-theme="light"] .mk-field::placeholder{color:rgba(20,20,20,.4)}
-    html[data-theme="light"] .mk-menubtn{border-color:rgba(20,20,20,.25);color:#141414}
-    html[data-theme="light"] .mk-cta:hover{box-shadow:0 10px 24px rgba(30,58,95,.22)}
+    html[data-theme="light"] .mk-cta:hover,html[data-theme="light"] .mk-cta:active{box-shadow:0 16px 20px -12px rgba(30,58,95,.3),0 20px 34px -10px rgba(255,189,89,.5)}
     html[data-theme="light"] img[alt="Makutano Digital"],html[data-theme="light"] .mk-link{filter:none}
     @media (max-width:900px){
       .mk-hero h1{font-size:46px !important}
@@ -71,7 +65,7 @@
   <div style="position:absolute;left:0;top:0;width:330px;height:330px;border:34px solid #ffbd59;border-radius:70px"></div>
   <div style="position:absolute;left:180px;top:180px;width:330px;height:330px;border:34px solid #fff;border-radius:70px"></div>
 </div>
-<div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14)" class="mk-pad">
+<div class="mk-fixedbar mk-pad" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14);background:#1e3a5f">
   <a href="index.php" style="display:flex;align-items:center;gap:12px;color:#fff">
     <img src="assets/logo.png" alt="Makutano Digital" style="width:32px;height:32px;border-radius:7px;display:block;background:#fff">
     <span style="font:700 15px/1 'Space Grotesk',sans-serif;letter-spacing:.04em">MAKUTANO</span>
@@ -96,7 +90,7 @@
   <h2 style="margin:0 0 14px;font:700 40px/1.15 'Space Grotesk',sans-serif;letter-spacing:-.02em"><span class="lang-en"><span style="color:#fff">Our </span><span style="color:#ffbd59">Core Values</span></span><span class="lang-sw"><span style="color:#fff">Maadili </span><span style="color:#ffbd59">Yetu Makuu</span></span></h2>
   <p style="margin:0 auto 40px;max-width:680px;font:400 16px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.68)"><span class="lang-en">Our core values guide every partnership and drive exceptional results.</span><span class="lang-sw">Maadili yetu makuu yanaongoza kila ushirikiano na kuleta matokeo bora.</span></p>
   <div class="mk-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c2.8 1.6 4.6 4.9 4.6 8.6 0 2.4-.8 4.6-2.1 6.3l-2.5 2.6-2.5-2.6C8.2 15.7 7.4 13.5 7.4 11.1c0-3.7 1.8-7 4.6-8.6Z"></path><circle cx="12" cy="10" r="1.8"></circle><path d="M8.5 15.5 5.5 18l1-3.4"></path><path d="M15.5 15.5 18.5 18l-1-3.4"></path><path d="M9.5 19.5 10 22h4l.5-2.5"></path></svg>
@@ -105,7 +99,7 @@
       </div>
       <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We harness cutting-edge web and mobile technologies to create practical, future-ready solutions.</span><span class="lang-sw">Tunatumia teknolojia za kisasa za wavuti na simu kuunda suluhisho la vitendo na la baadaye.</span></p>
     </div>
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
@@ -114,7 +108,7 @@
       </div>
       <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We believe in co-creating with our clients, ensuring that every solution reflects both sides of the need.</span><span class="lang-sw">Tunaamini katika kubuni pamoja na wateja wetu, kuhakikisha kila suluhisho linaakisi mahitaji ya pande zote mbili.</span></p>
     </div>
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor"></circle></svg>
@@ -123,7 +117,7 @@
       </div>
       <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">Every product we build aims to improve lives, empower organizations, and strengthen connections.</span><span class="lang-sw">Kila bidhaa tunayounda inalenga kuboresha maisha, kuwezesha mashirika, na kuimarisha mahusiano.</span></p>
     </div>
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
@@ -132,7 +126,7 @@
       </div>
       <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We value honesty, clear communication, and accountability in every project.</span><span class="lang-sw">Tunathamini uaminifu, mawasiliano wazi, na uwajibikaji katika kila mradi.</span></p>
     </div>
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9Z"></path><path d="M11 3 8 9l4 12 4-12-3-6"></path><path d="M2 9h20"></path></svg>
@@ -148,18 +142,18 @@
     <p style="margin:0 0 22px;font:400 16px/1.72 Manrope,sans-serif;color:rgba(255,255,255,.8);text-wrap:pretty">Operating at the intersection of technology, real estate, and information services, we exist to give businesses, investors, and institutions a single, trusted partner for building and scaling their digital presence.</p>
     <p style="margin:0 0 40px;font:400 16px/1.72 Manrope,sans-serif;color:rgba(255,255,255,.8);text-wrap:pretty">Our core value proposition centres on digital advertising as our primary line of business, complemented by web solutions, software development, digital consultancy, and emerging digital currency services. We solve a specific market problem: the shortage of integrated, locally-grounded digital partners who understand both global technology standards and the practical realities of operating in the Tanzanian and East African market.</p>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
-      <div style="border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:26px 24px">
+      <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:26px 24px">
         <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:14px"><span class="lang-en">OUR MISSION</span><span class="lang-sw">DHAMIRA YETU</span></div>
         <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.78)">To empower businesses, investors, and institutions across Tanzania with integrated digital solutions — from advertising and software to consultancy and information services — delivered with international standards of quality and local market insight.</p>
       </div>
-      <div style="border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:26px 24px">
+      <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:26px 24px">
         <div style="font:500 10px 'JetBrains Mono',monospace;letter-spacing:.16em;color:#ffbd59;margin-bottom:14px"><span class="lang-en">OUR VISION</span><span class="lang-sw">MALENGO YETU</span></div>
         <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.78)">To be East Africa’s most trusted digital partner, recognised for turning emerging technology into practical, measurable growth for the organisations we serve.</p>
       </div>
     </div>
   </div>
   <div>
-    <div style="background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:30px 28px">
+    <div class="mk-vcard" style="background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:30px 28px">
       <div style="font:600 18px/1.3 'Space Grotesk',sans-serif;margin-bottom:6px"><span class="lang-en">Business registration</span><span class="lang-sw">Usajili wa biashara</span></div>
       <p style="margin:0 0 18px;font:400 13px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.6)"><span class="lang-en">A duly licensed business registered for the provision of local ICT services.</span><span class="lang-sw">Biashara iliyosajiliwa kisheria kwa utoaji wa huduma za TEHAMA za ndani.</span></p>
     <div style="display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)">
@@ -183,8 +177,8 @@
       <span style="font:500 13px/1.5 'JetBrains Mono',monospace;text-align:right">Dodoma, Makole</span>
     </div>
     <div style="display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)">
-      <span style="font:400 13px/1.5 Manrope,sans-serif;color:rgba(255,255,255,.62)"><span class="lang-en">License Validity</span><span class="lang-sw">Uhalali wa Leseni</span></span>
-      <span style="font:500 13px/1.5 'JetBrains Mono',monospace;text-align:right">4 August 2026 — 3 August 2027</span>
+      <span style="font:400 13px/1.5 Manrope,sans-serif;color:rgba(255,255,255,.62)"><span class="lang-en">Licensed Date</span><span class="lang-sw">Tarehe ya Leseni</span></span>
+      <span style="font:500 13px/1.5 'JetBrains Mono',monospace;text-align:right">4 August 2026</span>
     </div>
     </div>
   </div>
@@ -193,7 +187,7 @@
   <h2 style="margin:0 0 14px;font:700 40px/1.15 'Space Grotesk',sans-serif;letter-spacing:-.02em"><span class="lang-en"><span style="color:#fff">Proven </span><span style="color:#ffbd59">Credibility</span></span><span class="lang-sw"><span style="color:#fff">Uaminifu </span><span style="color:#ffbd59">Uliothibitika</span></span></h2>
   <p style="margin:0 auto 40px;max-width:620px;font:400 16px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.68)"><span class="lang-en">Why you can trust us to deliver exceptional results that exceed expectations.</span><span class="lang-sw">Kwa nini unaweza kutuamini kutoa matokeo bora yanayozidi matarajio.</span></p>
   <div class="mk-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left">
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
@@ -202,7 +196,7 @@
       </div>
       <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">Our team has strong experience in developing web and mobile applications across diverse industries.</span><span class="lang-sw">Timu yetu ina uzoefu mkubwa katika kutengeneza programu za wavuti na simu katika sekta mbalimbali.</span></p>
     </div>
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
@@ -211,7 +205,7 @@
       </div>
       <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We put our clients first, listening and tailoring solutions that bridge gaps effectively.</span><span class="lang-sw">Tunawaweka wateja wetu mbele, tukisikiliza na kurekebisha suluhisho zinazoziba mapengo kwa ufanisi.</span></p>
     </div>
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
@@ -220,7 +214,7 @@
       </div>
       <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">Organizations and individuals rely on us to deliver solutions that truly unite and create value.</span><span class="lang-sw">Mashirika na watu binafsi wanategemea sisi kutoa suluhisho zinazounganisha kweli na kuongeza thamani.</span></p>
     </div>
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 7 13.5 15.5 8.5 10.5 2 17"></path><path d="M16 7h6v6"></path></svg>
@@ -229,7 +223,7 @@
       </div>
       <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">We stay ahead of digital trends, ensuring our solutions remain relevant and impactful.</span><span class="lang-sw">Tunabaki mbele ya mienendo ya kidijitali, kuhakikisha suluhisho zetu zinabaki muhimu na zenye athari.</span></p>
     </div>
-    <div style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
+    <div class="mk-vcard" style="border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:26px 24px">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div style="width:44px;height:44px;flex:none;border-radius:999px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;color:#ffbd59">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
@@ -244,7 +238,7 @@
   <div style="font:500 10.5px 'JetBrains Mono',monospace;letter-spacing:.2em;color:#ffbd59;margin-bottom:26px"><span class="lang-en">LEADERSHIP</span><span class="lang-sw">UONGOZI</span></div>
   <p style="margin:0 0 30px;max-width:620px;font:400 16px/1.7 Manrope,sans-serif;color:rgba(255,255,255,.75)">Makutano Digital is led by a two-member executive team holding overall responsibility for strategy, operations, and client delivery.</p>
   <div class="mk-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
-    <div style="display:flex;gap:20px;border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:24px">
+    <div class="mk-vcard" style="display:flex;gap:20px;border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:24px">
       <div style="width:96px;height:112px;flex:none;border-radius:8px;background:rgba(255,255,255,.07);border:1px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;text-align:center;font:400 9px/1.5 'JetBrains Mono',monospace;color:rgba(255,255,255,.45)">portrait<br>360×420</div>
       <div>
         <div style="font:600 18px/1.3 'Space Grotesk',sans-serif">[Full Name]</div>
@@ -252,7 +246,7 @@
         <p style="margin:0;font:400 13px/1.6 Manrope,sans-serif;color:rgba(255,255,255,.7)">Holds overall responsibility for the company’s strategic direction, partnerships, and growth. Degree-qualified.</p>
       </div>
     </div>
-    <div style="display:flex;gap:20px;border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:24px">
+    <div class="mk-vcard" style="display:flex;gap:20px;border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:24px">
       <div style="width:96px;height:112px;flex:none;border-radius:8px;background:rgba(255,255,255,.07);border:1px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;text-align:center;font:400 9px/1.5 'JetBrains Mono',monospace;color:rgba(255,255,255,.45)">portrait<br>360×420</div>
       <div>
         <div style="font:600 18px/1.3 'Space Grotesk',sans-serif">[Full Name]</div>
@@ -263,7 +257,7 @@
   </div>
   <div style="margin-top:16px;font:400 11px/1.6 'JetBrains Mono',monospace;color:rgba(255,255,255,.4)">Names, degrees and years of experience still to be supplied.</div>
 </div>
-<div style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
+<div class="mk-fixedbar" style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
   <div class="mk-pad mk-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:52px 46px 40px">
     <div>
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
@@ -328,6 +322,7 @@
           if (el.dataset.mkStyle === undefined) el.dataset.mkStyle = el.getAttribute('style');
           el.setAttribute('style', el.dataset.mkStyle);
           if (!light) continue;
+          if (el.closest('.mk-fixedbar')) continue;
           var out = [];
           for (var j = 0; j < el.style.length; j++) {
             var p = el.style[j];
