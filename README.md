@@ -18,6 +18,7 @@ The project ships as **two parallel implementations of the same site**:
     index.php                  Home        — hero, service marquee, 01/02/03 capability cards
     services.php                Services    — the seven service domains, each its own card
     about.php                   About       — summary, core values, mission/vision, registration, leadership
+    partners.php                 Partners    — Ilboru Saccos, Moinfotech, Smartclass
     contact.php                 Contact     — details, map embed, enquiry form (sends via PHPMailer)
     mail-config.php             SMTP settings used by contact.php (see Security note below)
     lib/PHPMailer/               Vendored PHPMailer (Exception.php, PHPMailer.php, SMTP.php) — no Composer
@@ -25,12 +26,12 @@ The project ships as **two parallel implementations of the same site**:
     assets/Makutano_Digital_Company_Profile.pdf
     Makutano_Digital_Company_Profile.docx   Source document for site copy
     laravel/
-      routes/web.php                                 named routes: home, services, about, contact, contact.submit, lang.switch
+      routes/web.php                                 named routes: home, services, about, partners, contact, contact.submit, lang.switch
       app/Http/Controllers/PageController.php         renders each page view; submit() validates the enquiry form
       resources/views/layouts/app.blade.php           layout: styles, theme-toggle script, language script
       resources/views/partials/navbar.blade.php        active state via request()->routeIs()
       resources/views/partials/footer.blade.php        page links + contact info + registration numbers
-      resources/views/pages/{home,services,about,contact}.blade.php
+      resources/views/pages/{home,services,about,partners,contact}.blade.php
 
 ## Running the static site
 

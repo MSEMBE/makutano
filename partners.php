@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services — Makutano Digital</title>
+  <title>Partners — Makutano Digital</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="apple-touch-icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,17 +33,23 @@
     .mk-vcard{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease,background .3s ease;cursor:default}
     .mk-vcard:hover,.mk-vcard:active{transform:translateY(-8px);border-color:rgba(255,189,89,.55);background:rgba(255,255,255,.04);box-shadow:0 24px 20px -18px rgba(0,0,0,.45),0 30px 45px -12px rgba(0,0,0,.4)}
     html[data-theme="light"] .mk-vcard:hover,html[data-theme="light"] .mk-vcard:active{border-color:rgba(255,189,89,.7);background:rgba(30,58,95,.03);box-shadow:0 24px 20px -18px rgba(30,58,95,.16),0 30px 45px -12px rgba(30,58,95,.22)}
-    .mk-vcard:hover .mk-arrow{opacity:1;transform:translateX(0)}
-    .mk-arrow{opacity:0;transform:translateX(-8px);transition:all .25s ease;color:#ffbd59}
-    .mk-field{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:13px 15px;color:#fff;font:400 14px Manrope,sans-serif;outline:none;transition:border-color .18s ease}
-    .mk-field:focus{border-color:#ffbd59}
-    .mk-field::placeholder{color:rgba(255,255,255,.4)}
+    .mk-timeline{position:relative}
+    .mk-timeline::before{content:"";position:absolute;top:6px;bottom:6px;left:50%;width:2px;background:rgba(255,255,255,.16);transform:translateX(-1px)}
+    html[data-theme="light"] .mk-timeline::before{background:rgba(20,20,20,.14)}
+    .mk-tl-row{position:relative;display:flex;margin-bottom:48px}
+    .mk-tl-row:last-child{margin-bottom:0}
+    .mk-tl-row.mk-tl-right{justify-content:flex-end}
+    .mk-tl-dot{position:absolute;top:34px;width:14px;height:14px;border-radius:999px;background:#ffbd59;box-shadow:0 0 0 5px #1e3a5f;z-index:1}
+    html[data-theme="light"] .mk-tl-dot{box-shadow:0 0 0 5px #f7f5f0}
+    .mk-tl-row.mk-tl-left .mk-tl-dot{right:-47px}
+    .mk-tl-row.mk-tl-right .mk-tl-dot{left:-47px}
+    .mk-tl-chip{display:inline-flex;align-items:center;gap:6px;font:500 11.5px 'JetBrains Mono',monospace;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 12px;transition:border-color .18s ease,color .18s ease}
+    a.mk-tl-chip:hover{color:#ffbd59;border-color:#ffbd59}
+    html[data-theme="light"] .mk-tl-chip{color:rgba(20,20,20,.7);border-color:rgba(20,20,20,.2)}
     .mk-menubtn{display:none;transition:border-color .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease}
     .mk-themebtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:rgba(255,255,255,.82);cursor:pointer;transition:color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
     .mk-themebtn:hover,.mk-themebtn:active{color:#fff;border-color:rgba(255,255,255,.6);transform:translateY(-2px) scale(1.05);box-shadow:0 10px 18px -10px rgba(0,0,0,.4)}
     html[data-theme="light"] body{background:#f7f5f0;color:#141414}
-    html[data-theme="light"] .mk-field{background:rgba(20,20,20,.04);border-color:rgba(20,20,20,.2);color:#141414}
-    html[data-theme="light"] .mk-field::placeholder{color:rgba(20,20,20,.4)}
     html[data-theme="light"] .mk-cta:hover,html[data-theme="light"] .mk-cta:active{box-shadow:0 16px 20px -12px rgba(30,58,95,.3),0 20px 34px -10px rgba(255,189,89,.5)}
     html[data-theme="light"] img[alt="Makutano Digital"],html[data-theme="light"] .mk-link{filter:none}
     @media (max-width:900px){
@@ -53,6 +59,10 @@
       .mk-menubtn{display:block}
       .mk-grid{grid-template-columns:1fr !important}
       .mk-pad{padding-left:22px !important;padding-right:22px !important}
+      .mk-timeline::before{left:20px}
+      .mk-tl-row,.mk-tl-row.mk-tl-right{justify-content:flex-start}
+      .mk-tl-row .mk-tl-card{width:100% !important;margin-left:44px}
+      .mk-tl-row.mk-tl-left .mk-tl-dot,.mk-tl-row.mk-tl-right .mk-tl-dot{left:-32px;right:auto}
     }
   </style>
 </head>
@@ -64,9 +74,9 @@
   </a>
   <div class="mk-nav" data-open="false" style="display:flex;align-items:center;gap:28px">
       <a class="mk-navlink" href="index.php"><span class="lang-en">Home</span><span class="lang-sw">Nyumbani</span></a>
-      <a class="mk-navlink" href="services.php" aria-current="page"><span class="lang-en">Services</span><span class="lang-sw">Huduma</span></a>
+      <a class="mk-navlink" href="services.php"><span class="lang-en">Services</span><span class="lang-sw">Huduma</span></a>
       <a class="mk-navlink" href="about.php"><span class="lang-en">About</span><span class="lang-sw">Kuhusu</span></a>
-      <a class="mk-navlink" href="partners.php"><span class="lang-en">Partners</span><span class="lang-sw">Washirika</span></a>
+      <a class="mk-navlink" href="partners.php" aria-current="page"><span class="lang-en">Partners</span><span class="lang-sw">Washirika</span></a>
       <a class="mk-navlink" href="contact.php"><span class="lang-en">Contact</span><span class="lang-sw">Wasiliana</span></a>
       <span style="font:500 11px 'JetBrains Mono',monospace;padding:5px 9px;border:1px solid rgba(255,255,255,.3);border-radius:999px" class="mk-langtoggle">EN / SW</span>
       <button class="mk-themebtn" aria-label="Toggle theme" title="Light / dark"><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.6" fill="none" stroke="currentColor" stroke-width="1.4"></circle><path d="M8 1.4a6.6 6.6 0 000 13.2z" fill="currentColor"></path></svg></button>
@@ -80,78 +90,56 @@
   <div style="position:absolute;left:180px;top:180px;width:330px;height:330px;border:34px solid #fff;border-radius:70px"></div>
 </div>
 <div class="mk-pad" style="position:relative;padding:74px 46px 56px;max-width:900px">
-  <div style="font:500 10.5px 'JetBrains Mono',monospace;letter-spacing:.2em;color:#ffbd59;margin-bottom:24px">SEVEN CORE SERVICE DOMAINS</div>
-  <h1 style="margin:0 0 22px;font:700 60px/1.02 'Space Grotesk',sans-serif;letter-spacing:-.03em;text-wrap:balance"><span class="lang-en"><span class="mk-gradtext">Expertise &amp; core competencies</span></span><span class="lang-sw"><span class="mk-gradtext">Utaalam na uwezo wetu wa msingi</span></span></h1>
-  <p style="margin:0;max-width:620px;font:400 17px/1.62 Manrope,sans-serif;color:rgba(255,255,255,.75);text-wrap:pretty"><span class="lang-en">Makutano Digital's activities span seven core service domains, each aligned to industry-standard practice.</span><span class="lang-sw">Shughuli za Makutano Digital zinajumuisha nyanja saba za huduma, kila moja ikiendana na viwango vya kitaaluma.</span></p>
+  <div style="font:500 10.5px 'JetBrains Mono',monospace;letter-spacing:.2em;color:#ffbd59;margin-bottom:24px">OUR PARTNERS</div>
+  <h1 style="margin:0 0 22px;font:700 60px/1.02 'Space Grotesk',sans-serif;letter-spacing:-.03em;text-wrap:balance"><span class="lang-en"><span class="mk-gradtext">Organisations we work alongside</span></span><span class="lang-sw"><span class="mk-gradtext">Mashirika tunayoshirikiana nayo</span></span></h1>
+  <p style="margin:0;max-width:620px;font:400 17px/1.62 Manrope,sans-serif;color:rgba(255,255,255,.75);text-wrap:pretty"><span class="lang-en">We work alongside a small group of trusted organisations across finance, technology, and education to deliver more value to our clients.</span><span class="lang-sw">Tunashirikiana na kundi dogo la mashirika yanayoaminika katika fedha, teknolojia, na elimu ili kuongeza thamani kwa wateja wetu.</span></p>
 </div>
-<div class="mk-pad" style="position:relative;padding:26px 46px 46px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:16px">
-  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
-    <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">01</span>
-    <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Software Development</span><span class="lang-sw">Utengenezaji wa Programu</span></div>
-      <div style="display:inline-block;margin-top:9px;font:500 9.5px 'JetBrains Mono',monospace;letter-spacing:.14em;color:#1e3a5f;background:#ffbd59;padding:4px 8px;border-radius:4px">PRIMARY</div>
+<div class="mk-pad" style="position:relative;padding:26px 46px 64px;border-top:1px solid rgba(255,255,255,.14)">
+  <div class="mk-timeline">
+    <div class="mk-tl-row mk-tl-left">
+      <div class="mk-vcard mk-tl-card" style="position:relative;width:calc(50% - 40px);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:28px 26px">
+        <span class="mk-tl-dot"></span>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px">
+          <div style="width:48px;height:48px;flex:none;border-radius:12px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;font:700 16px 'Space Grotesk',sans-serif;color:#ffbd59">IS</div>
+          <span style="font:600 10px 'JetBrains Mono',monospace;letter-spacing:.1em;color:#1e3a5f;background:#ffbd59;padding:5px 10px;border-radius:999px"><span class="lang-en">FINANCIAL SERVICES</span><span class="lang-sw">HUDUMA ZA FEDHA</span></span>
+        </div>
+        <div style="font:600 20px/1.3 'Space Grotesk',sans-serif;margin-bottom:8px">Ilboru Saccos</div>
+        <div style="width:34px;height:2px;background:#ffbd59;margin:0 0 14px"></div>
+        <p style="margin:0 0 16px;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">A savings and credit cooperative society (SACCOS) we work with on digital tools for member services and financial operations.</span><span class="lang-sw">Chama cha akiba na mikopo (SACCOS) tunachoshirikiana nacho katika zana za kidijitali kwa huduma za wanachama na shughuli za fedha.</span></p>
+        <a class="mk-tl-chip" href="https://ias.co.tz" target="_blank" rel="noopener">ias.co.tz →</a>
+      </div>
     </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Custom software solutions, including Software as a Service (SaaS) products tailored to client operational needs.</span><span class="lang-sw">Suluhisho maalum za programu, ikiwemo bidhaa za Software as a Service (SaaS) zilizoundwa kwa mahitaji ya uendeshaji wa mteja.</span></p>
-    <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
-  </div>
-  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
-    <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">02</span>
-    <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Web Solutions</span><span class="lang-sw">Suluhisho za Tovuti</span></div>
-      
+    <div class="mk-tl-row mk-tl-right">
+      <div class="mk-vcard mk-tl-card" style="position:relative;width:calc(50% - 40px);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:28px 26px">
+        <span class="mk-tl-dot"></span>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px">
+          <div style="width:48px;height:48px;flex:none;border-radius:12px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;font:700 16px 'Space Grotesk',sans-serif;color:#ffbd59">MI</div>
+          <span style="font:600 10px 'JetBrains Mono',monospace;letter-spacing:.1em;color:#1e3a5f;background:#ffbd59;padding:5px 10px;border-radius:999px"><span class="lang-en">TECHNOLOGY</span><span class="lang-sw">TEKNOLOJIA</span></span>
+        </div>
+        <div style="font:600 20px/1.3 'Space Grotesk',sans-serif;margin-bottom:8px">Moinfotech</div>
+        <div style="width:34px;height:2px;background:#ffbd59;margin:0 0 14px"></div>
+        <p style="margin:0 0 16px;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">Our technology development partner, collaborating with us on software engineering and platform delivery.</span><span class="lang-sw">Mshirika wetu wa uendelezaji wa teknolojia, tunayeshirikiana naye katika uhandisi wa programu na utoaji wa mifumo.</span></p>
+        <a class="mk-tl-chip" href="https://moinfo.co.tz" target="_blank" rel="noopener">moinfo.co.tz →</a>
+      </div>
     </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Development and ongoing maintenance of web portals and related online platforms, built to modern performance and security standards.</span><span class="lang-sw">Utengenezaji na matengenezo endelevu ya mifumo ya tovuti na majukwaa ya mtandaoni, kwa viwango vya kisasa vya utendaji na usalama.</span></p>
-    <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
-  </div>
-  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
-    <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">03</span>
-    <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Digital Advertising</span><span class="lang-sw">Matangazo ya Kidijitali</span></div>
-
+    <div class="mk-tl-row mk-tl-left">
+      <div class="mk-vcard mk-tl-card" style="position:relative;width:calc(50% - 40px);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:28px 26px">
+        <span class="mk-tl-dot"></span>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px">
+          <div style="width:48px;height:48px;flex:none;border-radius:12px;background:rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;font:700 16px 'Space Grotesk',sans-serif;color:#ffbd59">SC</div>
+          <span style="font:600 10px 'JetBrains Mono',monospace;letter-spacing:.1em;color:#1e3a5f;background:#ffbd59;padding:5px 10px;border-radius:999px"><span class="lang-en">EDUCATION</span><span class="lang-sw">ELIMU</span></span>
+        </div>
+        <div style="font:600 20px/1.3 'Space Grotesk',sans-serif;margin-bottom:8px">Smartclass</div>
+        <div style="width:34px;height:2px;background:#ffbd59;margin:0 0 14px"></div>
+        <p style="margin:0 0 16px;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.72)"><span class="lang-en">An education technology partner focused on digital learning tools and platforms.</span><span class="lang-sw">Mshirika wa teknolojia ya elimu anayelenga zana na mifumo ya kujifunza kidijitali.</span></p>
+        <span class="mk-tl-chip"><span class="lang-en">Digital Learning</span><span class="lang-sw">Kujifunza Kidijitali</span></span>
+      </div>
     </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Our primary business activity — comprehensive digital advertising services designed to build brand visibility and drive measurable client growth.</span><span class="lang-sw">Shughuli yetu kuu ya biashara — huduma kamili za matangazo ya kidijitali zilizoundwa kujenga mwonekano wa chapa na kuchochea ukuaji unaopimika wa mteja.</span></p>
-    <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
-  </div>
-  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
-    <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">04</span>
-    <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Digital Consultancy</span><span class="lang-sw">Ushauri wa Kidijitali</span></div>
-      
-    </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Expert advisory services across digital domains, helping organisations plan and execute their technology strategy.</span><span class="lang-sw">Huduma za ushauri wa kitaalam katika nyanja za kidijitali, kusaidia taasisi kupanga na kutekeleza mikakati ya teknolojia.</span></p>
-    <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
-  </div>
-  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
-    <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">05</span>
-    <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Real Estate Services</span><span class="lang-sw">Huduma za Ardhi na Majengo</span></div>
-      
-    </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Fee- and contract-based real estate brokerage, management, and consultancy services.</span><span class="lang-sw">Huduma za udalali, usimamizi na ushauri wa ardhi na majengo kwa ada na mikataba.</span></p>
-    <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
-  </div>
-  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
-    <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">06</span>
-    <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Digital Currency Operations</span><span class="lang-sw">Shughuli za Sarafu za Kidijitali</span></div>
-      
-    </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Cryptocurrency-related activities conducted in full compliance with prevailing laws and regulations.</span><span class="lang-sw">Shughuli zinazohusiana na sarafu za kidijitali zinazofanywa kwa kufuata kikamilifu sheria na kanuni zilizopo.</span></p>
-    <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
-  </div>
-  <div class="mk-vcard" style="display:grid;grid-template-columns:70px 1fr 1.15fr 40px;align-items:center;gap:24px;padding:28px 30px;border:1px solid rgba(255,255,255,.16);border-radius:12px">
-    <span style="font:700 22px/1 'Space Grotesk',sans-serif;color:#ffbd59">07</span>
-    <div>
-      <div style="font:600 24px/1.2 'Space Grotesk',sans-serif"><span class="lang-en">Information Services</span><span class="lang-sw">Huduma za Taarifa</span></div>
-      
-    </div>
-    <p style="margin:0;font:400 14px/1.65 Manrope,sans-serif;color:rgba(255,255,255,.7)"><span class="lang-en">Additional information service activities undertaken as they create value for our clients and partners.</span><span class="lang-sw">Shughuli za ziada za huduma za taarifa zinazofanywa zinapoleta thamani kwa wateja na washirika wetu.</span></p>
-    <span class="mk-arrow" style="font:400 20px Manrope,sans-serif;text-align:right">→</span>
   </div>
 </div>
-<div class="mk-pad" style="position:relative;padding:60px 46px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap">
-  <div style="font:600 26px/1.3 'Space Grotesk',sans-serif;max-width:520px"><span class="lang-en">Not sure which service fits? Tell us the outcome you need.</span><span class="lang-sw">Hujui huduma ipi inafaa? Tueleze matokeo unayohitaji.</span></div>
-  <a class="mk-cta" href="contact.php" style="background:#ffbd59;color:#1e3a5f;padding:16px 30px;border-radius:999px;font:700 14.5px 'Space Grotesk',sans-serif"><span class="lang-en">Request a proposal</span><span class="lang-sw">Omba pendekezo</span></a>
+<div class="mk-pad" style="position:relative;padding:20px 46px 64px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14)">
+  <div style="font:600 26px/1.3 'Space Grotesk',sans-serif;max-width:520px"><span class="lang-en">Interested in partnering with Makutano Digital?</span><span class="lang-sw">Unapenda kushirikiana na Makutano Digital?</span></div>
+  <a class="mk-cta" href="contact.php" style="background:#ffbd59;color:#1e3a5f;padding:16px 30px;border-radius:999px;font:700 14.5px 'Space Grotesk',sans-serif"><span class="lang-en">Get in touch</span><span class="lang-sw">Wasiliana nasi</span></a>
 </div>
 <div class="mk-fixedbar" style="border-top:1px solid rgba(255,255,255,.14);background:#16304f">
   <div class="mk-pad mk-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:52px 46px 40px">

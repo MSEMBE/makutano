@@ -1,4 +1,4 @@
-<div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14)" class="mk-pad">
+<div style="position:sticky;top:0;z-index:30;background:#1e3a5f;display:flex;align-items:center;justify-content:space-between;padding:20px 46px;border-bottom:1px solid rgba(255,255,255,.14)" class="mk-pad">
   <a href="{{ route('home') }}" style="display:flex;align-items:center;gap:12px;color:#fff">
     <img src="{{ asset('assets/logo.png') }}" alt="Makutano Digital" style="width:32px;height:32px;border-radius:7px;display:block;background:#fff">
     <span style="font:700 15px/1 'Space Grotesk',sans-serif;letter-spacing:.04em">MAKUTANO</span>
@@ -7,6 +7,7 @@
       <a class="mk-navlink" href="{{ route('home') }}" @if(request()->routeIs('home')) aria-current="page" @endif><span class="lang-en">Home</span><span class="lang-sw">Nyumbani</span></a>
       <a class="mk-navlink" href="{{ route('services') }}" @if(request()->routeIs('services')) aria-current="page" @endif><span class="lang-en">Services</span><span class="lang-sw">Huduma</span></a>
       <a class="mk-navlink" href="{{ route('about') }}" @if(request()->routeIs('about')) aria-current="page" @endif><span class="lang-en">About</span><span class="lang-sw">Kuhusu</span></a>
+      <a class="mk-navlink" href="{{ route('partners') }}" @if(request()->routeIs('partners')) aria-current="page" @endif><span class="lang-en">Partners</span><span class="lang-sw">Washirika</span></a>
       <a class="mk-navlink" href="{{ route('contact') }}" @if(request()->routeIs('contact')) aria-current="page" @endif><span class="lang-en">Contact</span><span class="lang-sw">Wasiliana</span></a>
       <span style="font:500 11px 'JetBrains Mono',monospace;padding:5px 9px;border:1px solid rgba(255,255,255,.3);border-radius:999px" class="mk-langtoggle">EN / SW</span>
       <button class="mk-themebtn" aria-label="Toggle theme" title="Light / dark"><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.6" fill="none" stroke="currentColor" stroke-width="1.4"></circle><path d="M8 1.4a6.6 6.6 0 000 13.2z" fill="currentColor"></path></svg></button>

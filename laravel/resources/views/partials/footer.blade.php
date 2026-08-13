@@ -14,6 +14,7 @@
         <a href="{{ route('home') }}" style="color:rgba(255,255,255,.75)"><span class="lang-en">Home</span><span class="lang-sw">Nyumbani</span></a>
         <a href="{{ route('services') }}" style="color:rgba(255,255,255,.75)"><span class="lang-en">Services</span><span class="lang-sw">Huduma</span></a>
         <a href="{{ route('about') }}" style="color:rgba(255,255,255,.75)"><span class="lang-en">About</span><span class="lang-sw">Kuhusu</span></a>
+        <a href="{{ route('partners') }}" style="color:rgba(255,255,255,.75)"><span class="lang-en">Partners</span><span class="lang-sw">Washirika</span></a>
         <a href="{{ route('contact') }}" style="color:rgba(255,255,255,.75)"><span class="lang-en">Contact</span><span class="lang-sw">Wasiliana</span></a>
       </div>
     </div>

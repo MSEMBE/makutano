@@ -53,6 +53,19 @@
     html[data-theme="light"] .mk-menubtn{border-color:rgba(20,20,20,.25);color:#141414}
     html[data-theme="light"] .mk-cta:hover{box-shadow:0 10px 24px rgba(30,58,95,.22)}
     html[data-theme="light"] img[alt="Makutano Digital"],html[data-theme="light"] .mk-link{filter:none}
+    .mk-timeline{position:relative}
+    .mk-timeline::before{content:"";position:absolute;top:6px;bottom:6px;left:50%;width:2px;background:rgba(255,255,255,.16);transform:translateX(-1px)}
+    html[data-theme="light"] .mk-timeline::before{background:rgba(20,20,20,.14)}
+    .mk-tl-row{position:relative;display:flex;margin-bottom:48px}
+    .mk-tl-row:last-child{margin-bottom:0}
+    .mk-tl-row.mk-tl-right{justify-content:flex-end}
+    .mk-tl-dot{position:absolute;top:34px;width:14px;height:14px;border-radius:999px;background:#ffbd59;box-shadow:0 0 0 5px #1e3a5f;z-index:1}
+    html[data-theme="light"] .mk-tl-dot{box-shadow:0 0 0 5px #f7f5f0}
+    .mk-tl-row.mk-tl-left .mk-tl-dot{right:-47px}
+    .mk-tl-row.mk-tl-right .mk-tl-dot{left:-47px}
+    .mk-tl-chip{display:inline-flex;align-items:center;gap:6px;font:500 11.5px 'JetBrains Mono',monospace;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 12px;transition:border-color .18s ease,color .18s ease}
+    a.mk-tl-chip:hover{color:#ffbd59;border-color:#ffbd59}
+    html[data-theme="light"] .mk-tl-chip{color:rgba(20,20,20,.7);border-color:rgba(20,20,20,.2)}
     @media (max-width:900px){
       .mk-hero h1{font-size:46px !important}
       .mk-nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start !important;gap:18px !important;background:#16304f;padding:24px 46px;border-bottom:1px solid rgba(255,255,255,.14);z-index:20}
@@ -60,16 +73,20 @@
       .mk-menubtn{display:block}
       .mk-grid{grid-template-columns:1fr !important}
       .mk-pad{padding-left:22px !important;padding-right:22px !important}
+      .mk-timeline::before{left:20px}
+      .mk-tl-row,.mk-tl-row.mk-tl-right{justify-content:flex-start}
+      .mk-tl-row .mk-tl-card{width:100% !important;margin-left:44px}
+      .mk-tl-row.mk-tl-left .mk-tl-dot,.mk-tl-row.mk-tl-right .mk-tl-dot{left:-32px;right:auto}
     }
     </style>
 </head>
 <body>
+@include('partials.navbar')
 <div style="background:#1e3a5f;color:#fff;font-family:'Space Grotesk',sans-serif;position:relative;overflow:hidden">
 <div class="mk-link" style="position:absolute;right:-90px;top:60px;width:520px;height:520px;opacity:.13;pointer-events:none">
   <div style="position:absolute;left:0;top:0;width:330px;height:330px;border:34px solid #ffbd59;border-radius:70px"></div>
   <div style="position:absolute;left:180px;top:180px;width:330px;height:330px;border:34px solid #fff;border-radius:70px"></div>
 </div>
-@include('partials.navbar')
 @yield('content')
 @include('partials.footer')
 </div>
